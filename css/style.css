@@ -29,8 +29,46 @@ body {
     font-family: "Roboto";
 }
 
+#titleBanner {
+    position: absolute;
+    z-index: 10;
+    left: 15%;
+    top: 20%;
+}
+
+#titleBanner img {
+    height: 100%;
+    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
+    filter: drop-shadow(1px 1px 2px var(--anthracite));
+}
+
+.pBanner {
+    font-family: "Orkney";
+    font-size: 2em;
+    text-shadow: 1px 1px 5px white;
+    font-weight: bold;
+}
+
+.separator {
+    background-color: var(--gold);
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 1em;
+    box-shadow :1px 1px 2px var(--anthracite);
+}
+
 h1 {
     font-family: "Canter";
+    font-size: 10em;
+    text-shadow: 1px 1px 5px white;
+}
+
+.stars {
+    font-size: .5em;
+    vertical-align: top;
+    color: var(--gold);
+    text-shadow :1px 1px 2px var(--anthracite);
 }
 
 h2,
@@ -41,3 +79,56 @@ h6 {
     font-family: "Orkney";
 }
 
+/* SLIDER */
+.banner img {
+    height: 100vh;
+}
+
+/* NAVIGATION */
+#logo {
+    width: 60px;
+    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
+    filter: drop-shadow(1px 1px 2px var(--anthracite));
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+/* stroke */
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--gold);
+    height: 2px;
+}
+
+nav.stroke ul li a:hover {
+    font-weight: bold;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.btn-outline-success {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+}
