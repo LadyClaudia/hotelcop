@@ -1,0 +1,43 @@
+:root {
+    --anthracite: #1d1d1d;
+    --lightgold : #D9B77B;
+    --gold : #C89740;
+}
+
+@font-face {
+    font-family: "Canter";
+    src: url("../fonts/Canter-Bold.woff2") format("woff2"),
+        url("../fonts/Canter-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Orkney";
+    src: url("../fonts/Orkney-Light.woff2") format("woff2"),
+        url("../fonts/Orkney-Light.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color : var(--anthracite);
+    font-family: "Roboto";
+}
+
+h1 {
+    font-family: "Canter";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Orkney";
+}
+
