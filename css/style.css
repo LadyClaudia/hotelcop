@@ -45,8 +45,9 @@ body {
 .pBanner {
     font-family: "Orkney";
     font-size: 2em;
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 1px 0px 5px white;
     font-weight: bold;
+    color:  var(--anthracite);
 }
 
 .separator {
@@ -61,14 +62,15 @@ body {
 h1 {
     font-family: "Canter";
     font-size: 10em;
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 1px 0px 5px white;
+    color:  var(--anthracite);
 }
 
 .stars {
     font-size: .5em;
     vertical-align: top;
     color: var(--gold);
-    text-shadow :1px 1px 2px var(--anthracite);
+    text-shadow: 1px 1px 2px var(--anthracite);
 }
 
 h2,
@@ -79,9 +81,19 @@ h6 {
     font-family: "Orkney";
 }
 
+ul {
+    list-style-type: none;
+    margin-left:0;
+    padding-left:0;
+}
+
 /* SLIDER */
 .banner img {
     height: 100vh;
+}
+
+.carousel-item {
+    opacity: .5;
 }
 
 /* NAVIGATION */
@@ -97,12 +109,29 @@ nav ul li a:before {
     transition: all .5s;
 }
 
+.collapse ul li a,
+.collapse ul li a:after,
+.collapse ul li a:before {
+    transition: all .5s;
+}
+
+.navbar-nav a {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: var(--anthracite);
+}
+
 /* stroke */
-nav.stroke ul li a {
+nav.stroke ul li a,
+.collapse.stroke ul li a {
     position: relative;
 }
 
-nav.stroke ul li a:after {
+nav.stroke ul li a:after,
+.collapse.stroke ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -115,11 +144,13 @@ nav.stroke ul li a:after {
     height: 2px;
 }
 
-nav.stroke ul li a:hover {
+nav.stroke ul li a:hover,
+.collapse.stroke ul li a:hover {
     font-weight: bold;
 }
 
-nav.stroke ul li a:hover:after {
+nav.stroke ul li a:hover:after,
+.collapse.stroke ul li a:hover:after {
     width: 100%;
 }
 
@@ -131,4 +162,54 @@ nav.stroke ul li a:hover:after {
 .btn-outline-success:hover {
     background-color: var(--gold);
     border-color: var(--gold);
+}
+
+
+/* FOOTER */
+.basDePage .row {
+    margin: auto;
+    align-content: flex-start;
+}
+
+.iconesFooter {
+    justify-content: space-between;
+}
+
+.iconesFooter i {
+    color: var(--lightgold);
+    font-size: 2.2em;
+}
+
+.iconesFooter img {
+    width: 50px;
+}
+
+.iconesFooter i:hover {
+    color: var(--gold);
+    animation: swing;
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
+.iconesFooter img:hover {
+    color: var(--gold);
+}
+
+footer {
+    background-color: var(--lightgold);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+footer .row {
+    align-items: flex-end;
+}
+
+footer p {
+    line-height: 5px;
+    font-size: 1em;
+}
+
+footer h3 {
+    font-family: "Canter";
+    font-size: 2.5em;
 }
