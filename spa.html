@@ -9,13 +9,18 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>
+        <!-- CSS ANIMATE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
         <title>HôtelCop 5* | Le Spa</title>
     </head>
     <body>
-        <section class="banner2">
-            
+        <section class="banner-spa">
+            <div class="titleBannerMini pt-5">
+                <h1>Le Spa</h1>
+            </div>
+            <img src="img/institut2.jpg" alt="Bannière Spa">
         </section>
         
         <!-- NAVBAR -->
@@ -113,10 +118,231 @@
             </div>
         </div>
         
+        <div id="spa">
+            <h2 class="text-center my-5">Le Spa et ses soins</h2>
+            <section class="soins my-5">
+                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 align-items-center">
+                    <div class="col uniqueShadow">
+                        <img src="img/accueil_spa.jpg" alt="photo d'une cabine de spa">
+                    </div>
+                    <div class="col textSpa">
+                        <p>Oublier le temps, le stress, la fatigue et même l’heure qu’il est… Lâcher prise enfin et refaire le plein d’énergie vitale dans un lieu intime et protégé de l’agitation extérieure.</p>
+
+                        <p>Autour de la piscine intérieure de 16 mètres, cinq cabines seulement, un sauna, un hammam et une atmosphère paisible où l’on se voit bien enfin relâcher la pression pour goûter une déconnexion totale avec le rythme quotidien. Les hommes ne sont pas oubliés, avec des services indispensables aux gentlemen d’aujourd’hui.</p>
+
+                        <p>Les soins sont totalement personnalisés selon vos besoins ou vos envies.</p>
+
+                        <p>Ouvert 24h/24h, la piscine, le hammam et le sauna sont exclusivement réservés aux hôtes de plus de 16 ans séjournant à l'HôtelCop. La piscine, le hammam et le sauna sont à disposition des clients extérieurs bénéficiant d’un soin afin de prolonger ce moment de détente.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="info">
+                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 align-items-center">
+                    <div class="col uniqueShadow">
+                        <div class="schedule">
+                            <h2 class="text-center mb-5">Horaires du Spa</h2>
+                            <ul class="list-unstyled list-hours text-left mx-auto">
+                                
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Lundi
+                                    <span class="ml-auto">8h - 22h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Mardi
+                                    <span class="ml-auto">8h - 22h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Mercredi
+                                    <span class="ml-auto">8h - 22h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Jeudi
+                                    <span class="ml-auto">8h - 22h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Vendredi
+                                    <span class="ml-auto">8h - 21h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Samedi
+                                    <span class="ml-auto">9h - 23h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Dimanche
+                                    <span class="ml-auto">9h - 21h</span>
+                                </li>
+                            </ul>
+                            <p class="text-center">Réservation recommandée <br> Les soins sont accessibles à la clientèle extérieure</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul class="imgEffets pt-5 pt-lg-5 pt-xl-0 mb-5">
+                            <li><img src="img/piscine.jpg" alt=""></li>
+                            <li><img src="img/piscine1.jpg" alt=""></li>
+                            <li><img src="img/piscine2.jpg" alt=""></li>
+                            <li><img src="img/piscine3.jpg" alt=""></li>
+                            <li><img src="img/piscine4.jpg" alt=""></li>
+                            <li><img src="img/piscine5.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="decouverte my-5">
+                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                    <div class="col">
+                        <img src="img/relaxant.jpg" alt="soin découverte">
+                    </div>
+                    <div class="col textSpa">
+                        <h3>Soin Découverte <span class="badge badge-primary">125€/pers.</span></h3>
+                        <div class="row row-cols-3 options mb-5">
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-hourglass-half"></i>
+                                <p>1h</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-spa"></i>
+                                <p>Rituel</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user"></i>
+                                <p>Solo</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user-friends"></i>
+                                <p>Duo</p>
+                            </div>
+                        </div>
+                        <p>Inspiré des traditions de beauté polynésiennes, ce rituel est un soin complet original permettant un lâcher-prise immédiat et le relancement de l’énergie au tant physique que psychique.</p>
+                        <div class="center-btn">
+                        <button type="button" class="btn btn-outline-success text-center my-3">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="detente my-5">
+                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                    <div class="col order-1 order-xl-0 textSpa">
+                        <h3>Soin Détente <span class="badge badge-primary">185€/pers.</span></h3>
+                        <div class="row row-cols-3 options mb-5">
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-hourglass-half"></i>
+                                <p>1h30</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-spa"></i>
+                                <p>Rituel</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user"></i>
+                                <p>Solo</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user-friends"></i>
+                                <p>Duo</p>
+                            </div>
+                        </div>
+                        <p>Un massage hérité des guérisseurs de Polynésie et inspiré du Lomi-Lomi, utilisant les pressions et mouvements longs et continus des avant-bras de la praticienne. Les délicates notes de fleurs de Tiaré vous accompagnent tout au long de cette incroyable expérience de lâcher-prise.</p>
+                        <div class="center-btn">
+                        <button type="button" class="btn btn-outline-success text-center my-3">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/decouverte.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="relaxant my-5">
+                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                    <div class="col">
+                        <img src="img/pierreschaudes.jpg" alt="">
+                    </div>
+                    <div class="col textSpa">
+                        <h3>Soin Relaxant <span class="badge badge-primary">230€/pers.</span></h3>
+                        <div class="row row-cols-3 options mb-5">
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-hourglass-half"></i>
+                                <p>1h30</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-spa"></i>
+                                <p>Rituel</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user"></i>
+                                <p>Solo</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user-friends"></i>
+                                <p>Duo</p>
+                            </div>
+                        </div>
+                        <p>Inspiré d'une technique ancestrale chinoise, ce soin original aux pierres chaudes et froides permet d'équilibrer le Yin et le Yang, idéal pour relancer l’énergie corporelle tout en profitant d'un moment de relaxation profonde du corps et de l'esprit, seul(e) ou à deux.</p>
+                        <div class="center-btn">
+                        <button type="button" class="btn btn-outline-success text-center my-3">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="plaisir my-5">
+                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                    <div class="col order-1 order-xl-0 textSpa">
+                        <h3>Soin Plaisir <span class="badge badge-primary">280€</span></h3>
+                        <div class="row row-cols-3 options mb-5">
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-hourglass-half"></i>
+                                <p>2h</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-spa"></i>
+                                <p>Rituel</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user"></i>
+                                <p>Solo</p>
+                            </div>
+                        </div>
+                        <p>Inspiré des Mayas, ce soin complet permet un véritable éveil des sens. Laissez-vous tenter par une expérience inédite et gourmande qui éveille les sens pour une harmonie parfaite du corps et de l’esprit.</p>
+                        <div class="center-btn">
+                        <button type="button" class="btn btn-outline-success text-center my-3">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/enveloppement.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="evasion my-5">
+                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                    <div class="col">
+                        <img src="img/herbesaromatiques.jpg" alt="">
+                    </div>
+                    <div class="col textSpa">
+                        <h3>Soin Évasion <span class="badge badge-primary">250€</span></h3>
+                        <div class="row row-cols-3 options mb-5">
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-hourglass-half"></i>
+                                <p>2h</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-spa"></i>
+                                <p>Rituel</p>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <i class="fas fa-user"></i>
+                                <p>Solo</p>
+                            </div>
+                        </div>
+                        <p>Inspiré des techniques thailandaises, ce soin aux ballotins aromatiques aux parfums suaves et chaleureux permet une relaxation intense. Les pressions relaxantes conjuguées aux douces senteurs des huiles essentielles vous invitent à une évasion propice au calme et à la sérénité.</p>
+                        <div class="center-btn">
+                        <button type="button" class="btn btn-outline-success text-center my-3">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
-        
-        <section class="container-fluid basDePage mb-5">
-            <div class="row justify-content-between">
+        <section class="container-fluid basDePage my-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-between">
                 <div class="col">
                     <h4>HOTEL</h4>
                     <ul>
@@ -185,15 +411,18 @@
             </div>
         </section>
         <footer>
-            <div class="row justify-content-center mx-0 py-3">
-                <div class="col col-md-2">
-                    <h3>HôtelCop<span class="stars">&starf;&starf;&starf;&starf;&starf;</span></h3>
-                    <p>1 avenue Montaigne</p>
-                    <p>75008 Paris</p>
-                    <p>01.02.03.04.05</p>
-                    <p>contact@hotelcop.fr</p>
+            <h3 class="text-center">HôtelCop<span class="stars">&starf;&starf;&starf;&starf;&starf;</span></h3>
+            <div class="row row-cols-1 row-cols-lg-2 justify-content-center mx-0 py-3">
+                <div class="col-1 text-right">
+                    <ul>
+                        <li>1 avenue Montaigne</li>
+                        <li>75008 Paris</li>
+                        <li>01.02.03.04.05</li>
+                        <li>contact@hotelcop.fr</li>
+                    </ul>
+                    
                 </div>
-                <div class="col col-md-2">
+                <div class="col-1">
                     <ul>
                         <li>Mentions Légales</li>
                         <li>CGV</li>
@@ -212,5 +441,8 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            $('.list-hours li').eq(new Date().getDay()-1).addClass('today');
+        </script>
     </body>
 </html>
