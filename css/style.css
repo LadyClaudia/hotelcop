@@ -129,6 +129,10 @@ nav ul li a:before {
     color: var(--anthracite);
 }
 
+#navbars {
+    z-index: 999;
+}
+
 .sticky {
     position: sticky;
     top: 0;
