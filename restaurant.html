@@ -9,9 +9,6 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- CSS ANIMATE -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-        <!-- Slick -->
-        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/restaurant.css">
@@ -22,7 +19,7 @@
             <div class="titleBannerMini title-restaurant pt-5">
                 <h1>Le Restaurant</h1>
             </div>
-            <img src="img/plat2.jpg" alt="Bannière Restaurant">
+            <img src="img/restaurant-banner.jpg" alt="Bannière Restaurant">
         </section>
         
         <!-- NAVBAR -->
@@ -120,140 +117,281 @@
             </div>
         </div>
 
-        <div id="spa">
+        <div id="restaurant">
             <h2 class="text-center my-5">Le Restaurant</h2>
-            <section class="soin my-5">
-                <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 align-items-center">
-                    <div class="col-4 uniqueShadow">
-                        <img src="img/chef.jpg" alt="photo du chef">
-                    </div>
-                    <div class="col-8 textSpa">
-                        <h3>Le mot du Chef</h3>
+            <section class="chef my-5">
+                <div class="row">
+                    <h3 class="text-center py-4">Le mot du Chef</h3>
+                    <div>
+                        <img src="img/chef.jpg" alt="photo du chef" class="uniqueShadow mb-xl-5">
                         <p>" L'Amour du travail bien fait...
                         Chaque matin, se joue une agréable musique en cuisine, avec le ballet des arrivages de produits frais tout juste sélectionnés au Marché de Rungis (premier marché Européen), d'une fraîcheur et d'une qualité remarquable. L'inspiration se met en place inéluctablement pour la création de nouvelles combinaisons de saveurs équilibrées.</p>
-                            
+                                
                         <p>Je crois en ce juste dicton qui dit : " vous êtes ce que vous mangez".
                         Conscient que se joue là un rôle majeur au bien-être de chacun, la santé étant notre bien le plus précieux, je mets un point d'honneur à ce que chaque met soit élaboré de la manière la plus légère et équilibrée possible en gardant lors de la cuisson toutes les vitamines fondamentales au bon fonctionnement de notre organisme. Ainsi les convives de mon restaurant peuvent bénéficier au mieux de ce médicament naturel.</p>
-                            
+                                
                         <p>La Nature est source de bienfait. Je ne suis là que pour les sublimer.
                         Ce beau pays qu'est La France, détient une quantité incroyable de variétés de bons produits, avec la richesse du sol et ses terres si fertiles, la pêche et les agriculteurs que je salue pour leur bravoure, et qui nous permettent un voyage culinaire envié du monde entier.</p>
-                            
+                                
                         <p>Tous ces acteurs anonymes participent à ces instants magiques et donnent l'envie à notre équipe de dresser quotidiennement des tableaux gustatifs. La cuisine est un Art qui se partage dans la convivialité.</p>
-                            
+                                
                         <p>Le principal ingrédient d'une bonne cuisine est l'amour; l'amour et le respect envers ceux pour qui vous cuisinez."</p>
                     </div>
                 </div>
             </section>
 
-            <section class="container-fluid" id="slider-restau">
+            <section id="info">
+                <div class="row row-cols-1 align-items-center">
+                    <div class="col uniqueShadow">
+                        <div class="schedule">
+                            <h3 class="text-center mb-5">Horaires du Restaurant</h3>
+                            <ul class="list-unstyled list-hours text-left mx-auto">
+                                
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Lundi
+                                    <span class="ml-auto">11h30 - 23h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Mardi
+                                    <span class="ml-auto">11h30 - 23h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Mercredi
+                                    <span class="ml-auto">11h30 - 23h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Jeudi
+                                    <span class="ml-auto">11h30 - 23h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Vendredi
+                                    <span class="ml-auto">11h30 - 23h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Samedi
+                                    <span class="ml-auto">11h30 - 23h</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Dimanche
+                                    <span class="ml-auto">11h30 - 23h</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid mt-5" id="slider-restau">
                 <div class="slider responsive">
                     <div>
-                        <img src="img/miseEnBouche.jpeg" alt="">
-                    </div>
-                    <div>
                         <img src="img/legumes.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="img/legumes2.jpg" alt="">
                     </div>
                     <div>
                         <img src="img/noixDeSaintJacques.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/noixDeSaintJacques2.jpg" alt="">
-                    </div>
-                    <div>
                         <img src="img/viandeRouge.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="img/fromage.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="img/macarons.jpg" alt="">
                     </div>
                     <div>
                         <img src="img/plat.jpg" alt="">
                     </div>
                     <div>
+                        <img src="img/poisson.jpg" alt="">
+                    </div>
+                    <div>
                         <img src="img/tagliatelles.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/langoustes.jpg" alt="">
+                        <img src="img/fromage.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/dessert.jpg" alt="">
+                        <img src="img/dessert1.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/dessert2.jpg" alt="">
+                        <img src="img/dessert4.jpg" alt="">
                     </div>
                 </div>
+            </section>
+
+            <section class="container-fluid cartes my-5">
+                <div class="row justify-content-center m-5">
+                    <h2 class="text-center">Les cartes</h2>
+                </div>
                 
-                
+                <div class="row align-items-center menu">
+                    <div class="col">
+                        <img src="img/visuelMidi.jpg" alt="">
+                    </div>
+                    <div class="col my-5 my-lg-0">
+                        <h4>Un déjeuner au Restaurant</h4>
+                        <div class="px-5">
+                            <p><b>Le Foie Gras de Canard</b><br>
+                            Au Porto, Crème de Foie Gras et Navet</p>
+
+                            <p><b>Le Saint Jacques</b><br>
+                            Cuite au plat, Jus de Pomme à Cidre, Noix écrasées et torréfiées<br>
+                            Poêlée, Zeste de Citron Vert et Caviar de France</p>
+
+                            <p><b>Le Mille Feuilles</b><br>
+                            Caramélisé, Crème diplomate à la Vanille,<br>
+                            Caramel, Crème glacées à la Cardamome verte</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="files/menuMidi.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary">Menu</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid cartes my-5">
+                <div class="row align-items-center menu">
+                    <div class="col order-1 order-lg-0 my-5 my-lg-0">
+                        <h4>Un après-midi au Restaurant</h4>
+                        <div class="px-5">
+                            <p><b>Fleur Noire</b><br>
+                            Biscuit Sacher, feuilletine aux fèves de cacao,<br>
+                            mousse au Chocolat Caraïbe, crémeux Vanille Bourbon</p>
+
+                            <p><b>Les Macarons</b><br>
+                            Caramel à la fleur de sel, Pétale de rose, Pistache, Fruit de la passion, Vanille lactée et zestes de Citron vert, Chocolat sans lactose</p>
+
+                            <p><b>Fraise-Parfait glacé Champagne</b><br>
+                            Biscuit aux brisures de Dragées, sorbet Fraise, parfait glacé au Champagne rosé</p>
+
+                            <p><b>Marie-Antoinette</b><br>
+                            Thé noir de Chine, Pétales de rose, Agrumes et Miel</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="files/menuThe.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary">Menu</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/visuelMacaron.jpg" alt="">
+                    </div>
+            </section>
+
+            <section class="container-fluid cartes my-5">
+                <div class="row align-items-center menu">
+                    <div class="col">
+                        <img src="img/visuelSoir.jpg" alt="">
+                    </div>
+                    <div class="col my-5 my-lg-0">
+                        <h4>Un dîner au Restaurant</h4>
+                        <div class="px-5">
+                            <p><b>Le Crabe</b><br>
+                            Caviar de France,
+                            Soupe au parfum de Fenouil</p>
+
+                            <p><b>La Langoustine</b><br>
+                            Préparée en Raviolis,
+                            Crème de Foie gras, Fine gelée à la feuille d’or</p>
+
+                            <p><b>Le Saumon</b><br>
+                            Fumé au bois de Cerisier, Confit, Crème de wasabi frais</p>
+
+                            <p><b>Les Fromages</b><br>
+                            Frais et affinés</p>
+
+                            <p><b>Le Numa</b><br>
+                            Fine feuille de Chocolat “Intense”, Cazette pralinée <br> Croustillante,
+                            Noisette et Fleur de sel</p>
+                        </div>
+
+
+                        <div class="text-center">
+                            <a href="files/menuSoir.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary">Menu</button></a>
+                        </div>
+
+                    </div>
+            </section>
+
+            <section class="container-fluid cartes my-5">
+                <div class="row align-items-center menu">
+                    <div class="col order-1 order-lg-0 my-5 my-lg-0">
+                        <h4>La cave du Restaurant</h4>
+                        <div class="px-5">
+                            <p>Le restaurant vous propose une cave de plus de 30 000 bouteilles où les Petrus, Châteaux Latour, Cheval Blanc, Ausone, Haut Brion ; les grands crus de la Romanée Conti, les Montrachet, Bienvenues Bâtard Montrachet, vins du Domaine des Comte Lafon et Coche Dury… côtoient les appellations encore peu connues ou plus confidentielles. S'y mêlent les derniers coups de cœur du chef sommelier.</p>
+                            <p>A noter, un chariot de champagnes avec une collection sans cesse renouvelée ainsi qu'une large sélection de vins au verre.</p>
+                            <p>Pour vos repas au restaurant, nos sommeliers vous proposent une carte de vins & champagnes du plus abordable au plus prestigieux, vous permettant de choisir l’accord mets-vins idéal.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                        <img src="img/visuelVin.jpg" alt="">
+                    </div>
             </section>
         </div>
         
+        
+        <div class="separator-end"></div>
+        
         <section class="container-fluid basDePage my-5">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-between">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-md-between text-center px-5">
                 <div class="col">
                     <h4>HOTEL</h4>
                     <ul>
-                        <li>Accueil</li>
-                        <li>Qui sommes-nous?</li>
-                        <li>Accès - Contact</li>
-                        <li>Recrutement</li>
-                        <li>Evènements</li>
-                        <li>Presse</li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Qui sommes-nous?</a></li>
+                        <li><a href="#">Accès - Contact</a></li>
+                        <li><a href="#">Recrutement</a></li>
+                        <li><a href="#">Evènements</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Avis</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4>CHAMBRES</h4>
                     <ul>
-                        <li>Les Chambres</li>
-                        <li>Classique</li>
-                        <li>Confort</li>
-                        <li>Deluxe</li>
-                        <li>Les Suites</li>
+                        <li><a href="#">Les Chambres</a></li>
+                        <li><a href="#">Classique</a></li>
+                        <li><a href="#">Confort</a></li>
+                        <li><a href="#">Deluxe</a></li>
+                        <li><a href="#">Les Suites</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4>RESTAURANT</h4>
                     <ul>
-                        <li>Le Restaurant</li>
-                        <li>Carte Brasserie</li>
-                        <li>Carte Dégustation</li>
-                        <li>Carte Restaurant</li>
+                        <li><a href="#">Le Restaurant</a></li>
+                        <li><a href="#">Carte Brasserie</a></li>
+                        <li><a href="#">Carte Dégustation</a></li>
+                        <li><a href="#">Carte Restaurant</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4>SPA</h4>
                     <ul>
-                        <li>Le Spa et nos soins</li>
-                        <li>Soin Détente</li>
-                        <li>Soin Découverte</li>
-                        <li>Soin Relaxant</li>
-                        <li>Soin Plaisir</li>
-                        <li>Soin Evasion</li>
+                        <li><a href="#">Le Spa et nos soins</a></li>
+                        <li><a href="#">Soin Détente</a></li>
+                        <li><a href="#">Soin Découverte</a></li>
+                        <li><a href="#">Soin Relaxant</a></li>
+                        <li><a href="#">Soin Plaisir</a></li>
+                        <li><a href="#">Soin Evasion</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <div>
                         <h4>PARTAGEZ</h4>
                         <div class="iconesFooter">
-                            <i class="fab fa-facebook-square mr-3"></i>
-                            <i class="fab fa-instagram mr-3"></i>
-                            <i class="fab fa-twitter-square mr-3"></i>
+                            <a href="#"><i class="fab fa-facebook-square mr-3"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square mr-3"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square mr-3"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-square mr-3"></i></a>
                         </div>
-                        
+                        <div>
+                            <button type="button" class="btn btn-outline-secondary avis">Avis &starf;&starf;&starf;&starf;&star;</button>
+                        </div>
                     </div>
                     <div class="py-3">
-                        <label>Inscrivez-vous à notre newletter</label>
+                        <label>Inscrivez-vous à notre newsletter</label>
                         <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                            </div>
                             <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-paper-plane"></i></button>
+                            </div>
                         </div>
                     </div>
+
                     <div class="iconesFooter">
                         <img src="img/petfriendly.png" alt="pet friendly" class="mr-3">
                         <img src="img/freewifi.png" alt="free wifi" class="mr-3">
@@ -262,9 +400,9 @@
             </div>
         </section>
         <footer>
-            <h3 class="text-center">HôtelCop<span class="stars">&starf;&starf;&starf;&starf;&starf;</span></h3>
-            <div class="row row-cols-1 row-cols-lg-2 justify-content-center mx-0 py-3">
-                <div class="col-1 text-right">
+            <h3 class="text-center">HôtelCop <br><span class="stars">&starf;&starf;&starf;&starf;&starf;</span></h3>
+            <div class="row row-cols-2 justify-content-center mx-0 pb-3">
+                <div class="col-6 text-right">
                     <ul>
                         <li>1 avenue Montaigne</li>
                         <li>75008 Paris</li>
@@ -273,14 +411,17 @@
                     </ul>
                     
                 </div>
-                <div class="col-1">
+                <div class="col-6">
                     <ul>
-                        <li>Mentions Légales</li>
-                        <li>CGV</li>
-                        <li>Plan du site</li>
-                        <li>Imprimer la page</li>
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="javascript:window.print()">Imprimer la page</a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="text-center">
+                <small>Made with <i class="fas fa-heart"></i> by Jessica Viel & Guillaume Mehats</small>
             </div>
         </footer>
 
@@ -291,36 +432,10 @@
         <!-- Bootstrap JS-jQuery -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Slick JS -->
-        <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-        <script src="js/javascript.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/slick-custom.js"></script>
         <script>
-
-        $('.responsive').slick({
-            dots: false,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            prevArrow: false,
-            nextArrow: false,
-            responsive: [
-                {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    }
-                },
-                {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    }
-                }
-            ]
-        });
+            $('.list-hours li').eq(new Date().getDay()-1).addClass('today');
         </script>
     </body>
 </html>

@@ -1,19 +1,99 @@
-.banner2 img[src="img/plat2.jpg"] {
-    background-position: center 0px;
-    background-repeat: no-repeat;
-    opacity: .5;
-    width: 100%;
-    z-index: -1;
-}
-
 .title-restaurant {
     left: calc(50% - 293px);
     top: calc(50% - 140px);
 }
 
+.chef {
+    width: 80%;
+    border: 1px solid var(--gold);
+    margin: 0 auto;
+}
+
+.chef h3 {
+    width: 100%;
+}
+
+.chef img[src="img/chef.jpg"] {
+    max-width: 100%;
+    float: left;
+    margin-right: 15px;
+}
+
+.chef p {
+    padding: 0 10px;
+}
+
+.cartes {
+    width: 80%;
+    margin: auto;
+}
+
+.section {
+    display: flex;
+}
+
+.menu {
+    border: 1px solid var(--gold);
+}
+
+.menu p {
+    text-align: center;
+}
+
+.menu h4 {
+    text-align: center;
+}
+
+.menu img {
+    max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .menu {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 575.98px) {
+    .chef img[src="img/chef.jpg"] {
+        margin-right: unset;
+        margin-bottom: 15px;
+    }
+}
+
+/* SCHEDULE */
+
+.today {
+    color: var(--gold);
+    border-top: 1px solid var(--lightgold);
+    border-bottom: 1px solid var(--lightgold);
+}
+
+.schedule {
+    color: var(--anthracite);
+    padding: 25px;
+    border: 1px solid var(--gold);
+}
+
+/* GALLERY SOINS */
+#info img {
+    border: none;
+    width: 160px;
+    height: 180px;
+}
+
+#info .col {
+    overflow: visible;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Slider */
-
-
 .slick-slider {
     position: relative;
 
@@ -127,8 +207,6 @@
     display: none;
 }
 
-
-
 @media (max-width: 991.98px) {
     .slick-slide img {
         width: 100vw;
@@ -143,6 +221,6 @@
 
 @media (min-width: 1200px) {
     .slick-slide img {
-        width: 33vw;
+        width: 34vw;
     }
 }

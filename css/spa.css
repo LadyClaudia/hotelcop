@@ -16,16 +16,6 @@
     margin: auto;
 }
 
-#spa h2 {
-    font-size: 3em;
-    color: var(--gold);
-}
-
-#spa h3 {
-    font-size: 2.5em;
-    color: var(--gold);
-}
-
 #spa .col {
     width: 500px;
     overflow: hidden;
@@ -38,7 +28,7 @@
 
 #spa .row {
     border: 2px solid var(--gold);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #spa .options {
@@ -74,7 +64,7 @@
 #spa .textSpa {
     align-self: center;
     justify-content: center;
-} 
+}
 
 #spa .textSpa p {
     text-align: justify;
@@ -137,11 +127,13 @@
     box-shadow: 0 0 3px #333333;
     transition: .2s ease-in-out;
 }
+
 .imgEffets li:hover img {
     z-index: 2;
     transform: scale(1.5);
     box-shadow: 0 0 10px #333333;
 }
+
 .imgEffets:hover li:not(:hover) img {
     filter: grayscale(1) blur(5px);
 }
@@ -150,10 +142,12 @@
     .imgEffets li:nth-child(4) {
         clear: none;
     }
-    .imgEffets li:nth-child(3) { 
-    clear: both;
+
+    .imgEffets li:nth-child(3) {
+        clear: both;
     }
-    .imgEffets li:nth-child(5) { 
+
+    .imgEffets li:nth-child(5) {
         clear: both;
     }
 

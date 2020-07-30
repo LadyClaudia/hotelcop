@@ -36,8 +36,8 @@ body {
 #titleBanner {
     position: absolute;
     z-index: 10;
-    left: 15%;
-    top: 20%;
+    left: 28%;
+    top: 25%;
 }
 
 #titleBanner img {
@@ -58,8 +58,8 @@ body {
     background-color: var(--gold);
     display: block;
     height: 1px;
-    width: 100%;
-    margin-bottom: 1em;
+    width: 70%;
+    margin-top: -10%;
     box-shadow :1px 1px 2px var(--anthracite);
 }
 
@@ -83,6 +83,36 @@ h4,
 h5,
 h6 {
     font-family: "Orkney";
+    color: var(--gold);
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+.container-fluid {
+    margin-left: unset;
+    margin-right: unset;
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.text {
+    padding: 0 50px;
+    align-self: center;
+    justify-content: center;
+}
+
+.text p {
+    text-align: justify;
 }
 
 .row {
@@ -101,6 +131,42 @@ ul {
     padding-left:0;
 }
 
+a {
+    color: var(--anthracite);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--anthracite);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-outline-secondary {
+    border-color: var(--lightgold);
+    color: var(--lightgold);
+}
+
+.btn-outline-secondary:hover {
+    border-color: var(--gold);
+    background-color: var(--gold);
+    color: white;
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
+.btn-outline-secondary:focus {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    border-color: var(--gold);
+    background-color: var(--gold);
+    color: white;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    border-color: var(--gold);
+    background-color: var(--gold);
+}
+
 /* SLIDER */
 .banner img {
     height: 100vh;
@@ -109,6 +175,18 @@ ul {
 .carousel-item {
     opacity: .5;
 }
+
+/* BANNER STATIC */
+
+.banner2 img {
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    opacity: .5;
+    width: 100%;
+    z-index: -1;
+    height: 70vh;
+}
+
 
 /* NAVIGATION */
 #logo {
@@ -189,13 +267,21 @@ nav.stroke ul li a:hover:after,
 
 
 /* FOOTER */
+.separator-end {
+    display: block;
+    height: 1px;
+    margin: 30px auto;
+    width: 80%;
+    background-color: var(--gold);
+}
+
 .basDePage .row {
     margin: auto;
     align-content: flex-start;
 }
 
-.iconesFooter {
-    justify-content: space-between;
+.basDePage h4 {
+    text-align: center;
 }
 
 .iconesFooter i {
@@ -218,6 +304,11 @@ nav.stroke ul li a:hover:after,
     color: var(--gold);
 }
 
+.avis:hover {
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
 footer {
     background-color: var(--lightgold);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
@@ -230,8 +321,12 @@ footer .row {
 footer h3 {
     font-family: "Canter";
     font-size: 2.5em;
+    color: var(--anthracite);
 }
 
+footer .fa-heart {
+    color: #FF6666;
+}
 
 .titleBannerMini {
     margin: 0 auto;
@@ -243,4 +338,23 @@ footer h3 {
 .banner2 {
     position: relative;
     overflow: hidden;
+}
+
+
+@media print {
+    @page {margin: 1cm;}
+    .banner2 {display:none;}
+    .separator-end {display: none;}
+    .basDePage {display:none;}
+    footer {display:none;}
+    img {display: none;}
+
+    /* RESTAURANT */
+    #slider-restau {display: none;}
+    .menu {page-break-before: always;}
+
+    /* SPA */
+    .decouverte {page-break-before: always;}
+    .plaisir {page-break-before: always;}
+
 }
