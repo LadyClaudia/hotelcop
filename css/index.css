@@ -76,7 +76,7 @@
 
 }
 
-i {
+#indexCategory i {
     color: var(--lightgold);
     font-size: 1.7em;
 }
