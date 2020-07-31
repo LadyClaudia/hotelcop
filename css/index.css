@@ -1,0 +1,282 @@
+.presentation{
+    /* display: flex;
+    flex-wrap: wrap;
+    top: 40px;
+    justify-content: space-evenly; */
+    background: var(--lightgold);
+}
+
+.presentation h2 {
+    text-transform: uppercase;
+    color: var(--anthracite);
+    font-size: 2em;
+}
+
+.presentation img {
+    width: 50px;
+}
+
+.presentation p{
+    color: var(--anthracite);
+}
+
+.hotel{
+    display: inline-block;
+}
+
+.hotel img{
+    padding: 20px;
+}
+
+#indexCategory {
+    width: 80%;
+    margin: auto;
+}
+
+#indexCategory img {
+    width: 100%;
+    height: auto;
+}
+
+#indexCategory {
+    border: 1px solid var(--lightgold);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#indexCategory .options {
+    border: none;
+    height: 50px;
+    color: var(--lightgold);
+    text-align: center;
+    box-shadow: none;
+}
+
+#indexCategory .textIndex .options img{
+    color: var(--lightgold) !important;
+}
+
+#indexCategory .textIndex {
+    padding: 0 50px;
+    align-self: center;
+    justify-content: center;
+} 
+
+#indexCategory .textIndex p {
+    text-align: justify;
+    color: var(--anthracite);
+}
+
+#indexCategory .textIndex img{
+    width: 26px;
+}
+
+#indexCategory .options p {
+    text-align: center !important;
+    color: var(--gold);
+
+}
+
+i {
+    color: var(--lightgold);
+    font-size: 1.7em;
+}
+
+
+
+/* CARDS */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card h3 {
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.one {
+    background-image: url('../img/escapade.jpg');
+    background-position: center;
+}
+
+.two {
+    background-image: url('../img/diner_romantique.jpg');
+    background-position: center;
+}
+
+.three {
+    background-image: url('../img/spa_couple.jpg');
+    background-position: center;
+}
+
+.flip-card-back {
+    background-color: var(--lightgold);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h4 {
+    color: var(--anthracite);
+}
+
+/* ROOMS */
+.room{
+    height: 100vh;
+    position: relative;
+    background-image: url('../img/hotel_room.jpg');
+    background-position: fixed;
+    background-size: cover;
+}
+
+.room_details{
+    position: absolute;
+    z-index: 999;
+    top: 30%;
+    left: 30%;
+}
+
+.room_details button{
+    text-align: center;
+}
+
+.sleep{
+    background: #fff;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.sleep h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sleep p{
+    color: var(--anthracite);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sleep button{
+    margin-left: 40%;
+}
+
+.hotel_room img{
+    position: relative;
+    top: 100px;
+    right:150px;
+}
+
+/* PARALAXE RESTAU */
+.container2{
+    background: url('../img/restaurant_chef.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    border: 1px solid var(--lightgold);
+}
+
+.plate{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 60%;
+}
+
+.plate h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.plate button{
+    margin-left: 40%;
+    text-align: center;
+}
+
+.eat{
+    background: #fff;
+    width: 75%;
+}
+
+.eat h2{
+    color: var(--anthracite);
+
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+.container2 p{
+    color: var(--anthracite);
+    text-align: center;
+
+}
+
+
+
+.spa1 h3{
+    padding-bottom: 10px;  
+
+
+}
+
+.spa1 p{
+
+    color: var(--gold);
+}
+
+.spa{
+    width: 85%;
+}
+
+.shuttle{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10%;
+    padding-left: 3%;
+}
+
+.shuttle p{
+    background-color: var(--lightgold);
+    padding: 2%;
+    font-size: 22px;
+    width: 70%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.shuttle img{
+    position: absolute;
+    left: 45%;
+    top: -25%;
+    width: 15%;
+}
