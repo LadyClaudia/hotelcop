@@ -36,7 +36,8 @@ body {
 #titleBanner {
     position: absolute;
     z-index: 10;
-    left: 28%;
+    width: 100%;
+    text-align: center;
     top: 25%;
 }
 
@@ -224,6 +225,15 @@ nav ul li a:before {
     position: sticky;
     top: 0;
 }
+
+.fa-calendar-alt {
+    color: var(--lightgold);
+}
+
+fa-calendar-alt:hover {
+    color: var(--gold);
+    transition: ease-out 1s;
+} 
 
 /* stroke */
 nav.stroke ul li a,
