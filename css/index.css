@@ -1,0 +1,519 @@
+:root {
+    --anthracite: #1d1d1d;
+    --lightgold : #D9B77B;
+    --gold : #C89740;
+}
+
+@font-face {
+    font-family: "Canter";
+    src: url("../fonts/Canter-Bold.woff2") format("woff2"),
+        url("../fonts/Canter-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Orkney";
+    src: url("../fonts/Orkney-Light.woff2") format("woff2"),
+        url("../fonts/Orkney-Light.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color : var(--anthracite);
+    font-family: "Roboto";
+}
+
+.uniqueShadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#titleBanner {
+    position: absolute;
+    z-index: 10;
+    left: 15%;
+    top: 20%;
+}
+
+#titleBanner img {
+    height: 100%;
+    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
+    filter: drop-shadow(1px 1px 2px var(--anthracite));
+}
+.pBanner {
+    font-family: "Orkney";
+    font-size: 2em;
+    text-shadow: 1px 0px 5px white;
+    font-weight: bold;
+    color:  var(--anthracite);
+}
+
+.separator {
+    background-color: var(--gold);
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 1em;
+    box-shadow :1px 1px 2px var(--anthracite);
+}
+.banner h1{
+    color: var(--anthracite);
+}
+h1 {
+    font-family: "Canter";
+    font-size: 10em;
+    text-shadow: 1px 0px 5px white;
+}
+
+.stars {
+    font-size: .5em;
+    vertical-align: top;
+    color: var(--gold);
+    text-shadow: 1px 1px 2px var(--anthracite);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Orkney";
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: 0;
+    padding-right: 0;
+}
+ul {
+    list-style-type: none;
+    margin-left:0;
+    padding-left:0;
+}
+
+/* NAVIGATION */
+#logo {
+    width: 60px;
+    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
+    filter: drop-shadow(1px 1px 2px var(--anthracite));
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+.collapse ul li a,
+.collapse ul li a:after,
+.collapse ul li a:before {
+    transition: all .5s;
+}
+
+.navbar-nav a {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: var(--anthracite);
+}
+.navbar-nav img{
+    width: 20px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* stroke */
+nav.stroke ul li a,
+.collapse.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+.collapse.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--gold);
+    height: 2px;
+}
+
+nav.stroke ul li a:hover,
+.collapse.stroke ul li a:hover {
+    font-weight: bold;
+}
+
+nav.stroke ul li a:hover:after,
+.collapse.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.btn-outline-success {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+}
+
+
+.presentation{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 40px;
+    justify-content: space-evenly;
+    background: var(--lightgold);
+}
+.presentation h2{
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--anthracite);
+    top: 25%;
+    left: 40%;
+}
+.presentation p{
+    color: var(--anthracite);
+}
+.hotel{
+    display: inline-block;
+}
+
+.hotel img{
+    padding: 20px;
+}
+
+#indexCategory {
+    width: 80%;
+    margin: auto;
+}
+
+#indexCategory h2 {
+    font-size: 3em;
+    color: var(--gold);
+}
+
+#indexCategory h3{
+    font-size: 2.5em;
+    color: var(--a);
+}
+
+#indexCategory .col{
+    width: 500px;
+    overflow: hidden;
+}
+
+#indexCategory img {
+    width: 100%;
+    height: auto;
+}
+
+#indexCategory .row{
+    border: 2px solid var(--gold);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#indexCategory .options {
+    border: none;
+    height: 50px;
+    color: var(--lightgold);
+    text-align: center;
+    box-shadow: none;
+}
+#indexCategory .textIndex .options img{
+    color: var(--lightgold) !important;
+}
+#indexCategory .textIndex {
+    padding: 0 50px;
+    align-self: center;
+    justify-content: center;
+} 
+
+#indexCategory .textIndex p {
+    text-align: justify;
+    color: var(--anthracite);
+}
+
+#indexCategory .textIndex img{
+    width: 26px;
+}
+#indexCategory .options p {
+    text-align: center !important;
+    color: var(--gold);
+
+}
+.center-btn {
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+.cards {
+    text-align: center;
+    font-family: 'Roboto';
+    padding: 1em;
+}
+.flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.cards .flip .front h2, .cards .flip .back h2{
+    margin-top: 150px;
+}
+.flip .front, .flip .back{
+    display: block;
+    transition-duration: 2s;
+    transition-property: transform, opacity;
+}
+.flip .front{
+    transform: rotateY(0deg);
+}
+.flip .back{
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip .front:hover {
+    transform: rotateY(180deg);
+}
+.flip .back:hover {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.flip .front, .flip .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover!important;
+    background-position: center!important;
+    height: 420px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+    margin: 90px;
+}
+
+
+.room{
+    height: 100vh;
+    position: relative;
+    background-image: url('../img/hotel_room.jpg');
+    background-position: fixed;
+    background-size: cover;
+}
+.room_details{
+    position: absolute;
+    z-index: 999;
+    top: 30%;
+    left: 30%;
+}
+.room_details button{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 20%;
+    text-align: center;
+    border: 3px solid var(--lightgold);
+}
+.sleep{
+    background: #fff;
+    padding: 25px;
+    margin-top: 10px;
+}
+.sleep h2{
+    color: var(--anthracite);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sleep p{
+    color: var(--anthracite);
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.sleep button{
+    margin-left: 40%;
+}
+.hotel_room img{
+    position: relative;
+    top: 100px;
+    right:150px;
+}
+.container2{
+    background: url('../img/restaurant_chef.jpg') !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    height: 100vh;
+    border: 3px solid var(--lightgold);
+}
+.container2 img{
+    position: absolute;
+    left: 1%;
+    width: 500px;
+}
+.container2 .separator{
+    background-color: var(--gold);
+    display: block;
+    height: 1px;
+    width: 38%;
+    margin: 52.5%;
+    margin-left: 8%;
+    margin-bottom: 1em;
+    box-shadow :1px 1px 2px var(--anthracite);
+}
+.plate{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 60%;
+}
+.plate button{
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid var(--lightgold);
+    margin-left: 40%;
+    text-align: center;
+}
+.eat{
+    background: #fff;
+    padding: 3%;
+    width: 75%;
+}
+.eat h2{
+    color: var(--anthracite);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.eat p{
+    font-weight: bold;
+}
+.container2 p{
+    color: var(--anthracite);
+    text-align: center;
+    font-size: 25px;
+}
+.container-fluid{
+    background: var(--anthracite);
+    
+}
+
+.spa1 h3{
+    padding-bottom: 10px;  
+    color: var(--gold);
+    font-size: 35px;   
+}
+.spa1 p{
+    font-size: 24px;
+    color: var(--gold);
+}
+.spa{
+    width: 85%;
+}
+.shuttle{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10%;
+    padding-left: 3%;
+}
+.shuttle p{
+    background-color: var(--lightgold);
+    padding: 2%;
+    font-size: 22px;
+    width: 70%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.shuttle img{
+    position: absolute;
+    left: 45%;
+    top: -25%;
+    width: 15%;
+}
+/* FOOTER */
+.basDePage{
+    color: var(--anthracite);
+    background-color: #fff;
+}
+.basDePage .row {
+    margin: auto;
+    align-content: flex-start;
+}
+
+.iconesFooter {
+    justify-content: space-between;
+}
+
+.iconesFooter i {
+    color: var(--lightgold);
+    font-size: 2.2em;
+}
+
+.iconesFooter img {
+    width: 50px;
+}
+
+.iconesFooter i:hover {
+    color: var(--gold);
+    animation: swing;
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
+.iconesFooter img:hover {
+    color: var(--gold);
+}
+
+footer {
+    background-color: var(--lightgold);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+footer .row {
+    align-items: flex-end;
+}
+
+footer p {
+    line-height: 5px;
+    font-size: 1em;
+}
+
+footer h3 {
+    font-family: "Canter";
+    font-size: 2.5em;
+    color: var(--anthracite);
+}

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Familly -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>
+    <!-- CSS ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/qui_sommes_nous.css">
+    <link rel="shortcut icon" href="img/logo2.png">
+    <title>HôtelCop 5* | Qui sommes-nous?</title>
+</head>
+
+<body>
+    <section class="banner-whoAreWe">
+        <div class="titleBannerMini pt-5">
+            <h1>Qui sommes-nous?</h1>
+        </div>
+        <img src="img/qui_sommes_nous.png" alt="Bannière qui sommes nous">
+    </section>
+
+    <div id="navbars" class="sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow stroke">
+            <a class="navbar-brand mr-5" href="#"><img id="logo" src="img/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="index.html">Accueil </a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="rooms.html" data-toggle="collapse" data-target="#rooms">Les Chambres
+                        </a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="restaurant.html">Le Restaurant</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="spa.html">Le Spa</a>
+                    </li>
+                    <li class="nav-item mr-md-5 active">
+                        <a class="nav-link" href="hotelcop.html" data-toggle="collapse" data-target="#hotel">L'Hôtel</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/uk.png" alt="english version"> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/france.png" alt="version française"> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Second Nav -->
+        <div class="collapse stroke shadow" id="rooms" data-parent="#navbars">
+            <div class="navbar navbar-expand-lg bg-light p-3">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="rooms.html">Les Chambres </a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="rooms-classic.html">Classique</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="rooms-comfort.html">Confort</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="rooms-deluxe.html">Deluxe</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="rooms-suite.html">Suites</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse stroke shadow" id="hotel" data-parent="#navbars">
+            <div class="navbar navbar-expand-lg bg-light p-3">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="hotelcop.html">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="hotelcop.html">Accès - Contact</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="hotelcop.html">Recrutement</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="hotelcop.html">Evènements</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="hotelcop.html">Presse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse" id="searchBar" data-parent="#navbars">
+            <div class="bg-light p-3">
+                <form class="form-inline my-2 my-lg-0 justify-content-end">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="history">
+        <h2 class="text-center my-5">L'historique de HôtelCop</h2>
+        <h3 class="text-center my-5">Une histoire et une évolution internationale</h3>
+        <div class="timeline-wrapper clearfix">
+            <div class="timeline-content-day">
+                <div class="timeline-line"></div>
+                <div class="timeline-content-item" data-timeline="hour-10">
+                    <span>
+                        <p>1956</p>
+                        <p>Dublin<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/o_higgins.jpg">
+                            <span>Création d'HôtelCop par James Murphy, originaire de Dublin</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-11">
+                    <span>
+                        <p>1966</p>
+                        <p>Belfast<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/belfast.jpg">
+                            <span>À la conquête du marché nord-irlandais</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-12">
+                    <span>
+                        <p>1973</p>
+                        <p>Cardiff<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/cardiff.jpg">
+                            <span>Fort de ses succès, HôtelCop se lance à l'assaut du marché Britannique</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-13">
+                    <span>
+                        <p>1978</p>
+                        <p>Liverpool<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/liverpool.jpg">
+                            <span>HôtelCop se positionne dans une ville de plus grande envergure</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-14">
+                    <span>
+                        <p>1982</p>
+                        <p>Londres<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/londres.jpg">
+                            <span>Consécration sur le marché Britannique, ouverture à Londres</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-15">
+                    <span>
+                        <p>1986</p>
+                        <p>Eindhoven<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/eindhoven.jpg">
+                            <span>HôtelCop part conquérir le continent européen</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-16">
+                    <span>
+                        <p>1988</p>
+                        <p>Rotterdam<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/rotterdam.jpg">
+                            <span>Le succès ne se fait pas attendre aux Pays-Bas</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-17">
+                    <span>
+                        <p>1990</p>
+                        <p>La Haye<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/la_haye.jpg">
+                            <span>Confirmation de sa position aux Pays-Bas</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-18">
+                    <span>
+                        <p>1992</p>
+                        <p>Munich<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/munich.jpg">
+                            <span>Lancement en Allemagne</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-19">
+                    <span>
+                        <p>1994</p>
+                        <p>Cologne<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/cologne.jpg">
+                            <span>Ouverture à Cologne</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-20">
+                    <span>
+                        <p>1996</p>
+                        <p>Berlin<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/berlin.jpg">
+                            <span>Puis l'aventure continue à Berlin</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-21">
+                    <span>
+                        <p>2007</p>
+                        <p>Montréal<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/montreal.jpg">
+                            <span>Après le vieux continent, HôtelCop arrive en Amérique du Nord</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-22">
+                    <span>
+                        <p>2010</p>
+                        <p>Québec<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/quebec.jpg">
+                            <span>Et poursuit son ascension dans le nouveau Monde</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content-item" data-timeline="hour-23">
+                    <span>
+                        <p>2020</p>
+                        <p>Paris<p>
+                    </span>
+                    <div class="timeline-content-item-reveal">
+                        <a href="#">
+                            <img src="img/paris.jpg">
+                            <span>Arrivée sur un marché longtemps envisagé : Paris</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="relaxant my-5">
+            <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                <div class="col">
+                    <img src="img/evenement1.jpg" alt="chambre deluxe">
+                </div>
+                <div class="col textHistory">
+                    <h3 class="text-center">Nous accueillons vos évènements</h3>
+                    <p>Toutes différentes, les chambres Deluxe arborent le raffinement et les proportions idéales pour
+                        découvrir la capitale française dans ce qu’elle incarne de plus noble. Lit king-size, mobilier
+                        et décor de style moderne, séjourner comme un Prince prend ici tout son sens.</p>
+                    <div class="center-btn">
+                        <button type="button" class="btn btn-outline-success text-center my-3"><a
+                                href="evenements.html">En savoir plus</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plaisir my-5">
+            <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                <div class="col order-1 order-xl-0 textHistory">
+                    <h3 class="text-center">La presse parle de nous</h3>
+                    <p>Un lieu de choix pour ceux qui viennent visiter Paris en famille. Cette suite propose des lits
+                        doubles ou jumeaux et peut accueillir jusqu’à trois personnes. Elle peut communiquer avec une
+                        Chambre Supérieure pour vous offrir un espace supplémentaire.</p>
+                    <div class="center-btn">
+                        <button type="button" class="btn btn-outline-success text-center my-3"><a href="presse.html">En
+                                savoir plus</a></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/Californews.jpg" alt="Californews">
+                </div>
+            </div>
+        </section>
+        <section id="apply" class="relaxant my-5">
+            <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                <div class="col">
+                    <img src="img/staff2.jpg" alt="rejoignez-nous">
+                </div>
+                <div class="col textHistory">
+                    <h3 class="text-center">Travailler avec nous</h3>
+                    <p>Vous souhaitez rejoindre nos équipes ? Il n'y a rien de plus simple, pour cela vous n'avez qu'à cliquer sur le bouton ci-dessous, puis remplissez le formulaire qui s'ouvrira sur votre écran.</p>
+                    <div id="page">
+                        <div class="menu">
+                            <button class="btn" type="button" id="modal_open">Nous rejoindre</button>
+                        </div>
+                    </div> <!-- end #page -->
+                    <div class="modal-overlay" id="modal_window" aria-hidden="true" role="dialog" aria-labelledby="modal_title">
+                
+                        <div class="modal-content" id="modal_holder" role="document">
+                
+                            <h2 id="modal_title">Pour postuler, merci d'indiquer :</h2>
+                            <form>
+                                <label for="name">Nom:</label>
+                                <input type="text" id="name" class="input" placeholder="Votre nom" required />
+                                <label for="name">Prénom:</label>
+                                <input type="text" id="name" class="input" placeholder="Votre prénom" required />
+                                <label for="name">Entreprise:</label>
+                                <input type="text" id="name" class="input" placeholder="Votre entreprise" required />
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" class="input" placeholder="Votre e-mail" required />
+                                <label for="name" required>CV:</label>
+                                <input type="file" id="name" class="input" />
+                                <label for="name">Lettre de motivation:</label>
+                                <input type="file" id="name" class="input" />
+                
+                                <label class="label" for="message">Message:</label>
+                                <textarea name="message" id="message" cols="91" row="8" placeholder="Votre message..."></textarea>
+                
+                                <input type="submit" class='btn' value="Envoi" />
+                            </form>
+                
+                            <button class="btn-close" id="modal_close" type="button" aria-label="close">
+                                &times;
+                            </button>
+                        </div> <!-- end .modal-content -->
+                    </div> <!-- end .modal-overlay -->
+                </div>
+            </div>
+        </section>
+        <div class="access text-center" style="margin-bottom: 50px;">
+            <h2>Accès</h2>
+            <p>L'hôtel se situe au 1 Avenue Montaigne, 75008 Paris</p>
+            <div class="container-fluid">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.640007167288!2d2.299889715853658!3d48.86507470818982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1ses-419!2sfr!4v1595956099515!5m2!1ses-419!2sfr"
+                    frameborder="0" style="border:0; width:78vw; height:50vh" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+        <section class="location my-5">
+            <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-2 justify-content-between align-items-center">
+                <div class="textHistory">
+                    <h2 class="text-center">Accès</h2>
+                    <ul style="padding: 0 20px 0 20px;">
+                        <li>
+                            <p><img src="img/metro.png" alt="métro">&nbsp;&nbsp;Alma-Marceau (Ligne 9) | Pont de
+                                l'Alma (RER C)</p>
+                        </li>
+                        <li>
+                            <p><img src="img/bus.png" alt="bus">&nbsp;&nbsp;Alma-Marceau (Ligne 42, 63, 72, 80, 92)
+                            </p>
+                        </li>
+                        <li>
+                            <p><img src="img/car.png" alt="voiture">&nbsp;&nbsp;Périphérique nord : direction
+                                Champs-Élysées, puis place de la Concorde.
+                                <ul>
+                                    <li>
+                                        <p style="padding-left: 35px;">Périphérique sud : jusqu'à la porte de Bercy, direction
+                                            Place de la Concorde.</p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li>
+                            <p><img src="img/airplane.png" alt="avion">&nbsp;&nbsp;Aéroport Roissy Charles de Gaulle
+                                : 45min-1h
+                                Transfert en voiture avec chauffeur
+                                <ul>
+                                    <li>
+                                        <p style="padding-left: 35px;">Aéroport de beauvais : Transfert en voiture avec chauffeur</p>
+                                    </li>
+                                    <li>
+                                        <p style="padding-left: 35px;">Aéroport d'Orly : Durée du voyage environ 40min
+                                            Transfert en voiture avec chauffeur
+                                            Possibilité de prendre un taxi depuis l'aéroport
+                                            Bus Air France : départ toutes les 15/20 min</p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li>
+                            <p><img src="img/train.png" alt="train">&nbsp;&nbsp;6 gares : Gare du Nord
+                                (Eurostar/Thalys)&nbsp;/&nbsp;Gare de Bercy
+                                <ul>
+                                    <li><p style="padding-left: 35px;">Gare d'Austerlitz&nbsp;/&nbsp;Gare de Lyon (TGV
+                                        Méditerranée/Suisse/Italie)&nbsp;/&nbsp;Gare de l'Est (Allemagne)</p></li>
+                                    <li><p style="padding-left: 35px;">Gare Montparnasse (TGV Atlantique/Sud-Ouest)&nbsp;/&nbsp;Gare Saint-Lazare
+                                        (Normandie)</p></li>
+                                    <li></li>
+                                </ul>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img src="img/hotel_exterior.jpg" alt="HôtelCop">
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    
+    <section class="container-fluid basDePage mb-5">
+        <div class="row justify-content-between">
+            <div class="col">
+                <h4>HOTEL</h4>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Qui sommes-nous?</li>
+                    <li>Accès - Contact</li>
+                    <li>Recrutement</li>
+                    <li>Evènements</li>
+                    <li>Presse</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>CHAMBRES</h4>
+                <ul>
+                    <li>Les Chambres</li>
+                    <li>Classique</li>
+                    <li>Confort</li>
+                    <li>Deluxe</li>
+                    <li>Les Suites</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>RESTAURANT</h4>
+                <ul>
+                    <li>Le Restaurant</li>
+                    <li>Carte Brasserie</li>
+                    <li>Carte Dégustation</li>
+                    <li>Carte Restaurant</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>SPA</h4>
+                <ul>
+                    <li>Le Spa et nos soins</li>
+                    <li>Soin Détente</li>
+                    <li>Soin Découverte</li>
+                    <li>Soin Relaxant</li>
+                    <li>Soin Plaisir</li>
+                    <li>Soin Evasion</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div>
+                    <h4>PARTAGEZ</h4>
+                    <div class="iconesFooter">
+                        <i class="fab fa-facebook-square mr-3"></i>
+                        <i class="fab fa-instagram mr-3"></i>
+                        <i class="fab fa-twitter-square mr-3"></i>
+                    </div>
+
+                </div>
+                <div class="py-3">
+                    <label>Inscrivez-vous à notre newletter</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                </div>
+                <div class="iconesFooter">
+                    <img src="img/petfriendly.png" alt="pet friendly" class="mr-3">
+                    <img src="img/freewifi.png" alt="free wifi" class="mr-3">
+                </div>                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row justify-content-center mx-0 py-3">
+            <div class="col col-md-2">
+                <h3>HôtelCop<span class="stars">&starf;&starf;&starf;&starf;&starf;</span></h3>
+                <p>1 avenue Montaigne</p>
+                <p>75008 Paris</p>
+                <p>01.02.03.04.05</p>
+            </div>            
+        </div>
+    </footer>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS-jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="js/timeline.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
