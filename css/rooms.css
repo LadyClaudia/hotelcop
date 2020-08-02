@@ -1,195 +1,4 @@
-:root {
-    --anthracite: #1d1d1d;
-    --lightgold : #D9B77B;
-    --gold : #C89740;
-}
-
-@font-face {
-    font-family: "Canter";
-    src: url("../fonts/Canter-Bold.woff2") format("woff2"),
-        url("../fonts/Canter-Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Orkney";
-    src: url("../fonts/Orkney-Light.woff2") format("woff2"),
-        url("../fonts/Orkney-Light.woff") format("woff");
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    color : var(--anthracite);
-    font-family: "Roboto";
-}
-
-.uniqueShadow {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-#titleBanner {
-    position: absolute;
-    z-index: 10;
-    left: 15%;
-    top: 20%;
-}
-
-#titleBanner img {
-    height: 100%;
-    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
-    filter: drop-shadow(1px 1px 2px var(--anthracite));
-}
-.pBanner {
-    font-family: "Orkney";
-    font-size: 2em;
-    text-shadow: 1px 0px 5px white;
-    font-weight: bold;
-    color:  var(--anthracite);
-}
-
-.separator {
-    background-color: var(--gold);
-    display: block;
-    height: 1px;
-    width: 100%;
-    margin-bottom: 1em;
-    box-shadow :1px 1px 2px var(--anthracite);
-}
-.banner h1{
-    color: var(--anthracite);
-}
-h1 {
-    font-family: "Canter";
-    font-size: 10em;
-    text-shadow: 1px 0px 5px white;
-}
-
-.stars {
-    font-size: .5em;
-    vertical-align: top;
-    color: var(--gold);
-    text-shadow: 1px 1px 2px var(--anthracite);
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Orkney";
-}
-
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.col {
-    padding-left: 0;
-    padding-right: 0;
-}
-ul {
-    list-style-type: none;
-    margin-left:0;
-    padding-left:0;
-}
-
-/* SLIDER */
-.banner img {
-    height: 100vh;
-}
-
-.carousel-item {
-    opacity: .5;
-}
-/* NAVIGATION */
-#logo {
-    width: 60px;
-    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
-    filter: drop-shadow(1px 1px 2px var(--anthracite));
-}
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-    transition: all .5s;
-}
-
-.collapse ul li a,
-.collapse ul li a:after,
-.collapse ul li a:before {
-    transition: all .5s;
-}
-
-.navbar-nav a {
-    color: rgba(0,0,0,.5);
-    text-decoration: none;
-}
-
-.navbar-nav a:hover {
-    color: var(--anthracite);
-}
-.navbar-nav img{
-    width: 20px;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* stroke */
-nav.stroke ul li a,
-.collapse.stroke ul li a {
-    position: relative;
-}
-
-nav.stroke ul li a:after,
-.collapse.stroke ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: var(--gold);
-    height: 2px;
-}
-
-nav.stroke ul li a:hover,
-.collapse.stroke ul li a:hover {
-    font-weight: bold;
-}
-
-nav.stroke ul li a:hover:after,
-.collapse.stroke ul li a:hover:after {
-    width: 100%;
-}
-
-.btn-outline-success {
-    border-color: var(--gold);
-    color: var(--gold);
-}
-
-.btn-outline-success:hover {
-    background-color: var(--gold);
-    border-color: var(--gold);
-}
-
-#roomsCategory .textRoom img{
-    width: 26px;
-}
-
-.banner-room img[src="images/suite0.jpg"] {
+.banner-room img[src="img/suite0.jpg"] {
     height: 45vh;
     background-position: center 0px;
     background-repeat: no-repeat;
@@ -213,20 +22,12 @@ nav.stroke ul li a:hover:after,
     top: 0;
     left: 0;
 }
+
 #roomsCategory {
     width: 80%;
     margin: auto;
 }
 
-#roomsCategory h2 {
-    font-size: 3em;
-    color: var(--gold);
-}
-
-#roomsCategory h3{
-    font-size: 2.5em;
-    color: var(--gold);
-}
 
 #roomsCategory .col{
     width: 500px;
@@ -239,7 +40,7 @@ nav.stroke ul li a:hover:after,
 }
 
 #roomsCategory .row{
-    border: 2px solid var(--gold);
+    border: 1px solid var(--lightgold);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -263,10 +64,7 @@ nav.stroke ul li a:hover:after,
 #roomsCategory .textRoom .options img{
     color: var(--lightgold) !important;
 }
-.container-fluid{
-    background: var(--anthracite);
-    
-}
+
 button a{
     text-decoration: none;
     color: var(--gold);
@@ -286,56 +84,3 @@ button a:hover{
     font-size: .5em;
 }
 
-/* FOOTER */
-.basDePage{
-    color: var(--anthracite);
-    background-color: #fff;
-}
-.basDePage .row {
-    margin: auto;
-    align-content: flex-start;
-}
-
-.iconesFooter {
-    justify-content: space-between;
-}
-
-.iconesFooter i {
-    color: var(--lightgold);
-    font-size: 2.2em;
-}
-
-.iconesFooter img {
-    width: 50px;
-}
-
-.iconesFooter i:hover {
-    color: var(--gold);
-    animation: swing;
-    animation-duration: 1s;
-    transition: ease-out 1s;
-}
-
-.iconesFooter img:hover {
-    color: var(--gold);
-}
-
-footer {
-    background-color: var(--lightgold);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-}
-
-footer .row {
-    align-items: flex-end;
-}
-
-footer p {
-    line-height: 5px;
-    font-size: 1em;
-}
-
-footer h3 {
-    font-family: "Canter";
-    font-size: 2.5em;
-    color: var(--anthracite);
-}

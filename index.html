@@ -15,7 +15,8 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/index.css">
-        <!-- <link rel="stylesheet" href="css/modal.css"> -->
+
+        <link rel="icon" type="image/jpg" href="img/logo2.png">
         <title>HôtelCop 5* | Accueil</title>
     </head>
 
@@ -133,19 +134,19 @@
                 <div class="navbar navbar-expand-lg bg-light p-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mr-md-5">
-                            <a class="nav-link" href="hotelcop.html">Qui sommes-nous ?</a>
+                            <a class="nav-link" href="qui_sommes_nous.html">Qui sommes-nous ?</a>
                         </li>
                         <li class="nav-item mr-md-5">
-                            <a class="nav-link" href="hotelcop.html">Accès - Contact</a>
+                            <a class="nav-link" href="#">Accès - Contact</a>
                         </li>
                         <li class="nav-item mr-md-5">
-                            <a class="nav-link" href="hotelcop.html">Recrutement</a>
+                            <a class="nav-link" href="#">Recrutement</a>
                         </li>
                         <li class="nav-item mr-md-5">
-                            <a class="nav-link" href="hotelcop.html">Evènements</a>
+                            <a class="nav-link" href="evenements.html">Evènements</a>
                         </li>
                         <li class="nav-item mr-md-5">
-                            <a class="nav-link" href="hotelcop.html">Presse</a>
+                            <a class="nav-link" href="presse.html">Presse</a>
                         </li>
                     </ul>
                 </div>
@@ -164,7 +165,7 @@
         <section class="container-fluid mb-5">
             <div class="presentation py-3">
                 <div class="row d-flex justify-content-center">
-                    <img src="img/hotel_icon.jpg" alt="hotel 5 étoiles">
+                    <img src="img/hotel/hotel_icon.jpg" alt="hotel 5 étoiles">
                     <h2 class="ml-3">Hôtel 5 étoiles SPA restaurant</h2>
                 </div>
                 <div class="row justify-content-center">
@@ -176,8 +177,8 @@
         </section>
 
         <section id="indexCategory">
-            <div class="row align-items-center">
-                <div class="col">
+            <div class="row align-items-center flex-md-row flex-column my-5">
+                <div class="col order-1 order-md-0" id="aPropos">
                     <h3 class="text-center">À propos de l'hôtel</h3>
                     <div class="px-5">
                         <p>Situé en face du Musée du Louvre et surplombant le jardin des Tuileries, HôtelCop est à
@@ -196,40 +197,40 @@
                     </div>
                 </div>
                 <div class="col">
-                    <img src="img/hotel_reception.jpg" alt="réception HôtelCop">
+                    <img src="img/hotel/hotel_reception.jpg" alt="réception HôtelCop">
                 </div>
             </div>
-            <div class="row p-5 text-center">
-                <div class="col">
+            <div class="row p-5 text-center justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2">
                     <i class="fas fa-wheelchair"></i>
                     <p>Accès handicapés</p>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-4 col-lg-2">
                     <i class="fas fa-award"></i>
                     <p>Hôtel de luxe</p>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-4 col-lg-2">
                     <i class="far fa-clock"></i>
                     <p>Réception 24h</p>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-4 col-lg-2">
                     <i class="fas fa-monument"></i>
                     <p>Vues sur la Tour Eiffel</p>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-4 col-lg-2">
                     <i class="far fa-compass"></i>
                     <p>8e arrondissement</p>
                 </div>
             </div>
             <div class="text-center mb-5">
-                <a href="qui_sommes_nous.html"><button type="button" class="btn btn-outline-secondary text-center">En savoir plus</button></a>
+                <button onclick="window.location ='qui_sommes_nous.html';" type="button" class="btn btn-outline-secondary text-center">En savoir plus</button>
             </div>
         </section>
 
         <section class="container cards text-center my-5">
             <h3>Nos offres promotionnelles</h3>
-            <div class="row justify-content-center mt-5">
-                <div class="col">
+            <div class="row justify-content-center mt-5 flex-column flex-md-row">
+                <div class="col mx-mb-5 mb-5">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front one">
@@ -237,13 +238,12 @@
                             </div>
                             <div class="flip-card-back">
                                 <p>Une petite virée à deux pour maintenir la flamme</p>
-                                <button type="button" class="btn btn-outline-success text-center my-3">En savoir
-                                    plus</button>
+                                <button onclick="window.location ='rooms.html';" type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mx-mb-5 mb-5">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front two">
@@ -251,13 +251,12 @@
                             </div>
                             <div class="flip-card-back">
                                 <p>Un dîner digne des plus grandes déclarations d'amour</p>
-                                <button type="button" class="btn btn-outline-success text-center my-3">En savoir
-                                    plus</button>
+                                <button onclick="window.location ='restaurant.html';" type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mx-mb-5 mb-5">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front three">
@@ -265,8 +264,7 @@
                             </div>
                             <div class="flip-card-back">
                                 <p>Prenez soin l'un de l'autre et laissez-vous aller</p>
-                                <button type="button" class="btn btn-outline-success text-center my-3">En savoir
-                                    plus</button>
+                                <button  onclick="window.location ='spa.html';" type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
                             </div>
                         </div>
                     </div>
@@ -274,39 +272,47 @@
             </div>
         </section>
 
-        <section class="room my-5">
+        <div class="separator"></div>
+
+        <section class="container-fluid room my-5">
             <div class="room_details">
-                <div class="sleep p-5">
+                <div class="sleep p-2 p-md-5">
                     <h3>Pour votre confort</h3>
-                    <p>Votre tranquilité et votre satisfaction sont nos priorités absolues.</p>
-                    <p>Nous nous mettons en quatre pour vous accueillir comme il se doit,</p>
-                    <p>et vous proposer des prestations nous l'espérons à la hauteur de</p>
-                    <p>vos attentes, nous sommes à votre écoute.</p>
-                    <button type="button" class="btn btn-outline-secondary text-center my-3">Nos chambres</button>
+                    <p>Votre tranquilité et votre satisfaction sont nos priorités absolues. Nous nous mettons en quatre pour vous accueillir comme il se doit, et vous proposer des prestations nous l'espérons à la hauteur de vos attentes, nous sommes à votre écoute.</p>
+                    <div class="text-center">
+                        <button onclick="window.location ='rooms.html';" type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid container2 my-5">
+        <div class="separator"></div>
+
+        <section class="container-fluid chef my-5">
             <div class="plate">
-                <div class="eat p-5">
+                <div class="eat p-2 p-md-5">
                     <h3>La gastronomie ou <br>l'art d'un Chef</h3>
-                    <p>Chaque jour, notre Chef 3 Etoiles vous fait partager sa passion de la gastronomie en mettant tout son art au service des tables du Restaurant.</p>
-                    <button type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
+                    <p>Notre chef est animé par la passion de la cuisine et un goût immodéré du beau et du bon. Sa cuisine est une cuisine d'auteur, complexe sans être compliquée, brillante sans être démonstrative.
+                    Ses compositions très graphiques et modernes déclinent le même produit de plusieurs manières.
+                    Chaque plat est d’abord un émerveillement des yeux et une ivresse de parfums avant l’explosion des saveurs, une rencontre, un dialogue, une aventure, un imaginaire, une cuisine forte comme les évidences.
+                    Le chef propose une cuisine à la fois subtile et généreuse et révèle le meilleur des ingrédients, exaltant arômes et saveurs...</p>
+                    <div class="text-center">
+                        <button onclick="window.location ='restaurant.html';" type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container py-5">
-            <div class="row text-right align-items-center">
-                <div class="col col-md-3 spa1 text-align-justify justify-content-center">
-                    <h3>Le Spa</h3>
-                    <p>Nous prenons soin de vous</p>
-                    <p>venez vous relaxer</p>
-                    <button type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
-                </div>
-                <div class="col col-md-7">
-                    <img src="img/spa_collage.png" alt="spa" class="spa">
+        <div class="separator"></div>
+
+        <section class="container-fluid leSpa my-5">
+            <div class="spa1">
+                <div class="massage p-2 p-md-5">
+                    <h3>Spa & Bien-être <br>Un univers cooconing</h3>
+                    <p>Notre hôtel vous propose une pause de bien-être au sein de son spa où l'harmonie et le calme se conjuguent à l'élégance du lieu. Cet espace bien-être dispose d'une piscine intérieure, d'un sauna, d'un hammam, d'un jacuzzi et d'une douche sensorielle. Nos praticiennes vous prodigueront les meilleurs soins à base des produits naturels.</p>
+                    <div class="text-center">
+                        <button onclick="window.location ='spa.html';" type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -315,7 +321,16 @@
             <p>Nous vous transportons</p>
             <p>depuis / vers l'aéroport</p>
             <div class="image">
-                <img src="img/shuttle.png" alt="shuttle">
+                <img src="img/hotel/shuttle.png" alt="shuttle">
+            </div>
+        </section>
+
+        <section class="shuttle2 mb-5">
+            <div class="image text-center mb-5">
+                <img src="img/hotel/shuttle.png" alt="shuttle">
+            </div>
+            <div class="text-center">
+                <h4>Nous vous transportons depuis / vers l'aéroport</h4>
             </div>
         </section>
 
@@ -327,28 +342,28 @@
                     <h4>HOTEL</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="#">Qui sommes-nous?</a></li>
+                        <li><a href="qui_sommes_nous.html">Qui sommes-nous?</a></li>
                         <li><a href="#">Accès - Contact</a></li>
                         <li><a href="#">Recrutement</a></li>
-                        <li><a href="#">Evènements</a></li>
-                        <li><a href="#">Presse</a></li>
-                        <li><a href="#">Avis</a></li>
+                        <li><a href="evenements.html">Evènements</a></li>
+                        <li><a href="presse.html">Presse</a></li>
+                        <li><a href="avis.html">Avis</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4>CHAMBRES</h4>
                     <ul>
-                        <li><a href="#">Les Chambres</a></li>
-                        <li><a href="#">Classique</a></li>
-                        <li><a href="#">Confort</a></li>
-                        <li><a href="#">Deluxe</a></li>
-                        <li><a href="#">Les Suites</a></li>
+                        <li><a href="rooms.html">Les Chambres</a></li>
+                        <li><a href="rooms-classic.html">Classique</a></li>
+                        <li><a href="rooms-comfort.html">Confort</a></li>
+                        <li><a href="rooms-deluxe.html">Deluxe</a></li>
+                        <li><a href="rooms-suite.html">Les Suites</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4>RESTAURANT</h4>
                     <ul>
-                        <li><a href="#">Le Restaurant</a></li>
+                        <li><a href="restaurant.html">Le Restaurant</a></li>
                         <li><a href="#">Carte Brasserie</a></li>
                         <li><a href="#">Carte Dégustation</a></li>
                         <li><a href="#">Carte Restaurant</a></li>
@@ -357,7 +372,7 @@
                 <div class="col">
                     <h4>SPA</h4>
                     <ul>
-                        <li><a href="#">Le Spa et nos soins</a></li>
+                        <li><a href="spa.html">Le Spa et nos soins</a></li>
                         <li><a href="#">Soin Détente</a></li>
                         <li><a href="#">Soin Découverte</a></li>
                         <li><a href="#">Soin Relaxant</a></li>
@@ -375,7 +390,7 @@
                             <a href="#"><i class="fab fa-pinterest-square mr-3"></i></a>
                         </div>
                         <div class="pt-3">
-                            <button type="button" class="btn btn-outline-secondary avis">Avis &starf;&starf;&starf;&starf;&star;</button>
+                            <button  onclick="window.location ='avis.html';" type="button" class="btn btn-outline-secondary avis">Avis &starf;&starf;&starf;&starf;&star;</button>
                         </div>
                     </div>
                     <div class="py-3">
@@ -409,9 +424,9 @@
                 </div>
                 <div class="col-6">
                     <ul>
-                        <li><a href="#">Mentions Légales</a></li>
-                        <li><a href="#">CGV</a></li>
-                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="mentions_legales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                        <li><a href="sitemap.html">Plan du site</a></li>
                         <li><a href="javascript:window.print()">Imprimer la page</a></li>
                     </ul>
                 </div>
@@ -420,7 +435,6 @@
                 <small>Made with <i class="fas fa-heart"></i> by Jessica Viel & Guillaume Mehats</small>
             </div>
         </footer>
-
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>

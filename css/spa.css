@@ -1,4 +1,4 @@
-.banner2 img[src="img/institut2.jpg"] {
+.banner2 img[src="img/spa/institut2.jpg"] {
     background-position: center 0px;
     background-repeat: no-repeat;
     opacity: .5;
@@ -53,7 +53,7 @@
     width: auto;
 }
 
-#spa img[src="img/accueil_spa.jpg"] {
+#spa img[src="img/spa/accueil_spa.jpg"] {
     height: 500px;
 }
 

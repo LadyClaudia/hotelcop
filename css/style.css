@@ -29,6 +29,10 @@ body {
     font-family: "Roboto";
 }
 
+strong {
+    font-weight: normal;
+}
+
 .uniqueShadow {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -59,9 +63,8 @@ body {
     background-color: var(--gold);
     display: block;
     height: 1px;
-    width: 70%;
-    margin-top: -10%;
-    box-shadow :1px 1px 2px var(--anthracite);
+    width: 50%;
+    margin: auto;
 }
 
 h1 {
@@ -122,6 +125,11 @@ h4 {
 }
 
 .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-12 {
     padding-left: 0;
     padding-right: 0;
 }
@@ -350,14 +358,35 @@ footer .fa-heart {
     overflow: hidden;
 }
 
+@media (max-width: 991.98px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
 
 @media print {
     @page {margin: 1cm;}
+    .banner {display: none;}
     .banner2 {display:none;}
+    .separator {display: none;}
     .separator-end {display: none;}
     .basDePage {display:none;}
     footer {display:none;}
     img {display: none;}
+
+    /* INDEX */
+    .cards {display: none;}
+    .room {display: none;}
+    .chef {display: none;}
+    .leSpa {display: none;}
+    .shuttle {display: none !important;}
+    .shuttle2 {display: none;}
+
+    /* CHAMBRES */
+    .banner-room {display: none;}
+    .banner-classicRoom {display: none;}
+    .categories {display:none;}
 
     /* RESTAURANT */
     #slider-restau {display: none;}

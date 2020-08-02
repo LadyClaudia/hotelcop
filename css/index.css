@@ -1,8 +1,4 @@
 .presentation{
-    /* display: flex;
-    flex-wrap: wrap;
-    top: 40px;
-    justify-content: space-evenly; */
     background: var(--lightgold);
 }
 
@@ -86,7 +82,7 @@
 /* CARDS */
 .flip-card {
     background-color: transparent;
-    width: 300px;
+    width: 100%;
     height: 300px;
     perspective: 1000px;
 }
@@ -94,6 +90,8 @@
 .flip-card h3 {
     justify-content: center;
     align-items: center;
+    text-shadow: black 1px 1px 2px;
+    font-weight: bold;
 }
 
 .flip-card-inner {
@@ -104,6 +102,7 @@
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
 }
 
 
@@ -121,23 +120,37 @@
 }
 
 .one {
-    background-image: url('../img/escapade.jpg');
+    background-image: url('../img/hotel/escapade.jpg');
     background-position: center;
+    background-size: cover;
 }
 
 .two {
-    background-image: url('../img/diner_romantique.jpg');
+    background-image: url('../img/hotel/diner_romantique.jpg');
     background-position: center;
+    background-size: cover;
 }
 
 .three {
-    background-image: url('../img/spa_couple.jpg');
+    background-image: url('../img/hotel/soin-couple.jpg');
     background-position: center;
+    background-size: cover;
 }
 
 .flip-card-back {
-    background-color: var(--lightgold);
+    background-color: white;
+    border: 1px solid var(--lightgold);
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-card-back h4 {
@@ -148,26 +161,19 @@
 .room{
     height: 100vh;
     position: relative;
-    background-image: url('../img/hotel_room.jpg');
-    background-position: fixed;
+    background-image: url('../img/hotel/hotel_room.jpg');
     background-size: cover;
 }
 
 .room_details{
     position: absolute;
-    z-index: 999;
+    z-index: 10;
     top: 30%;
-    left: 30%;
-}
-
-.room_details button{
-    text-align: center;
+    left: 50%;
 }
 
 .sleep{
     background: #fff;
-    padding: 25px;
-    margin-top: 10px;
 }
 
 .sleep h3{
@@ -176,13 +182,7 @@
 }
 
 .sleep p{
-    color: var(--anthracite);
     text-align: center;
-    margin-bottom: 0;
-}
-
-.sleep button{
-    margin-left: 40%;
 }
 
 .hotel_room img{
@@ -191,22 +191,22 @@
     right:150px;
 }
 
+
+
 /* PARALAXE RESTAU */
-.container2{
-    background: url('../img/restaurant_chef.jpg');
+.chef{
+    background: url('../img/hotel/restaurant_chef.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     height: 100vh;
-    border: 1px solid var(--lightgold);
 }
 
 .plate{
     position: absolute;
     top: 30%;
-    left: 30%;
-    width: 60%;
+    right: 50%;
 }
 
 .plate h3{
@@ -214,47 +214,44 @@
     padding-bottom: 20px;
 }
 
-.plate button{
-    margin-left: 40%;
+.plate p {
     text-align: center;
 }
 
 .eat{
     background: #fff;
-    width: 75%;
 }
 
-.eat h2{
-    color: var(--anthracite);
 
+.leSpa {
+    height: 100vh;
+    position: relative;
+    background-image: url('../img/hotel/spa.jpg');
+    background-size: cover;
+}
+
+.spa1 {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+.spa1 h3 {
     text-align: center;
     padding-bottom: 20px;
 }
 
-
-
-.container2 p{
-    color: var(--anthracite);
+.spa1 p {
     text-align: center;
+}
 
+.massage {
+    background-color: white;
 }
 
 
 
-.spa1 h3{
-    padding-bottom: 10px;  
 
-
-}
-
-.spa1 p{
-
-    color: var(--gold);
-}
-
-.spa{
-    width: 85%;
-}
 
 .shuttle{
     position: relative;
@@ -270,7 +267,6 @@
     padding: 2%;
     font-size: 22px;
     width: 70%;
-    text-transform: uppercase;
     text-align: center;
 }
 
@@ -279,4 +275,54 @@
     left: 45%;
     top: -25%;
     width: 15%;
+}
+
+.shuttle2 {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .room {
+        background-position: center;
+    }
+    .room_details {
+        top: 0;
+        left: 0;
+    }
+
+    .plate {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .eat {
+        width: unset;
+    }
+    .chef {
+        background-position: center;
+        height: 150vh;
+    }
+
+    .leSpa {
+        background-position: 20%;
+        height: 150vh;
+    }
+    .spa1 {
+        top: 0;
+        left: 0;
+    }
+
+
+    .shuttle {
+        display: none;
+    }
+
+    .shuttle2 {
+        display: block;
+        background-color: white;
+    }
+
+    .shuttle2 img {
+        width: 50%;
+    }
 }

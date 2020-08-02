@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-.chef img[src="img/chef.jpg"] {
+.chef img[src="img/restau/chef.jpg"] {
     max-width: 100%;
     float: left;
     margin-right: 15px;
@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 575.98px) {
-    .chef img[src="img/chef.jpg"] {
+    .chef img[src="img/restau/chef.jpg"] {
         margin-right: unset;
         margin-bottom: 15px;
     }
