@@ -34,7 +34,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item mr-md-5 active">
+                        <li class="nav-item mr-md-5">
                             <a class="nav-link" href="index.html">Accueil </a>
                         </li>
                         <li class="nav-item mr-md-5">
@@ -47,13 +47,13 @@
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="spa.html">Le Spa</a>
                         </li>
-                        <li class="nav-item mr-md-5">
+                        <li class="nav-item mr-md-5 active">
                             <a class="nav-link" href="hotelcop.html" data-toggle="collapse" data-target="#hotel">L'Hôtel</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav flex-row justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link" href="reservation.html"><i class="far fa-calendar-alt"></i></a>
+                            <a class="nav-link" href="reservation.html" data-toggle="collapse" data-target="#reservation"><i class="far fa-calendar-alt"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -65,15 +65,14 @@
                             <a class="nav-link" href="#"><img src="img/flag_uk.png" alt=""></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i
-                                    class="fas fa-search"></i></a>
+                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i class="fas fa-search"></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
             <!-- Second Nav -->
             <div class="collapse stroke shadow" id="rooms" data-parent="#navbars">
-                <div class="navbar navbar-expand-lg bg-light p-3">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="rooms.html">Les Chambres </a>
@@ -94,7 +93,7 @@
                 </div>
             </div>
             <div class="collapse stroke shadow" id="hotel" data-parent="#navbars">
-                <div class="navbar navbar-expand-lg bg-light p-3">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="qui_sommes_nous.html">Qui sommes-nous ?</a>
@@ -111,6 +110,9 @@
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="presse.html">Presse</a>
                         </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="avis.html">Avis</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -122,15 +124,23 @@
                     </form>
                 </div>
             </div>
+            <div class="collapse stroke shadow" id="reservation" data-parent="#navbars">
+                <div class="navbar navbar-expand-lg bg-light p-3 justify-content-center justify-content-md-end">
+                    <button onclick="window.location ='reservation.html';" type="button" class="btn btn-outline-secondary">Réservation</button>
+                </div>
+            </div>
         </div>
 
-        <section class="container">
+        <section class="container opinion">
             <h2 class="text-center my-5">Les avis</h2>
 
             <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#avis-hotel" role="tab" aria-controls="home"
-                        aria-selected="true">Chambres</a>
+                        aria-selected="true">L'hôtel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="rooms-tab" data-toggle="tab" href="#avis-rooms" role="tab" aria-controls="rooms" aria-selected="false">Chambres</a>
                 </li>
 
                 <li class="nav-item">
@@ -145,6 +155,196 @@
 
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active reviews" id="avis-hotel" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="firstSeparator"></div>
+                    <div class="subReviews">
+                        <div class="row">
+                            <img src="img/avis/swedish-guy.jpg" alt="femme française" title="femme française">
+                            <h6>Gunnar Blomqvist a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Ett av de absolut finaste hotellen i Paris
+                        </h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Här var vi på en weekend jag och min hustru. Hotellet ligger rätt så långt ner på Champs Élysées på den välkända gatan med alla lyxigaste och mest ansedda butikerna som tex LV och även Chanel, Dior mfl. Hotellet syns verkligen med sina röda färgglada markiser.
+                        Här finns också en av världens mest ansedda barer som är gjord som en is-bar, mycket häftigt. Hit kommer ofta kändisar för att antingen parta före eller efter nattens infall.
+                        Hotellet har otroligt trevliga rum, vi hade valt en svit som var otroligt fräck med en stor spegel med guld ram som egentligen var en TV. Allt här är klassiskt och superfint inrett, mycket påminner om Grand Hotells egna rum.</p>
+                        <p><small>le 22/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/italian-lady.jpg" alt="femme états-unis" title="femme états-unis">
+                            <h6>Paola Robertini a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Romantico</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Location speciale nel cuore di Parigi a pochi passi dalla Senna e dalla Tour Eiffel. Staff gentilissimo e puntualissimo nel room service, menu ampio e ricco. Camere spaziose, ricercate, pulizia impeccabile.</p>
+                        <p><small>le 22/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/us-guy.jpg" alt="homme français" title="homme français">
+                            <h6>Bobby Watson a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Great weekend at HôtelCop</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Went in October to celebrate my husband birthday and we had the most amazing time there. The staff were so attentive and the hotel itself is a gem. Amazing property and location - made our city break super special</p>
+                        <p><small>le 16/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/us-girl.jpg" alt="femme états-uni" title="femme états-uni">
+                            <h6>Claire Lawson a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Stay like King !</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>I spent almost two weeks there and it was an amazing experience!
+                        From the door man to the room service and the gym this hotel is the best one in Paris by far.
+                        The only thing that is pretty but I think that exists better is the main restaurant. Is too expensive for what they offer but is certainly beautiful, but is to post a pic on Instagram and then go eat somewhere else.
+                        The room breakfast is very good and the food is amazing.</p>
+                        <p><small>le 16/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/french-guy.jpg" alt="femme française" title="femme française">
+                            <h6>Hervé Jugnart a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Une fois dans sa vie ... au moins !</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Tout simplement l'un des plus beaux et charmants hôtels que vous trouverez. Situé juste à côté des Champs-Elysées et à proximité de la Tour Eiffel et autres attractions principales. Le service est incroyable et le personnel nous a bien accueilli et à l'aise, accueil exceptionnel de concierge mènent par Charles et romain qui a fait tout ce qu'ils pouvaient pour rendre notre séjour agréable. Nous avions une suite interne du tribunal qui était spacieuse et magnifiquement aménagées, calme et paisible. Le service du petit déjeuner était élégante, et la nourriture délicieuse. Nous avons vraiment apprécié le bar et le salon ainsi. Cet hôtel  est absolument extraordinaire dans un style parisien classique. Tout autour un séjour incroyable qui ne viennent à un tribunal substantielle, mais nous avons eu l'impression que c'était de l'argent bien dépensé. Séjourner dans cet hôtel est une expérience en soi ..</p>
+                        <p><small>le 16/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/french-lady.jpg" alt="homme français" title="homme français">
+                            <h6>Sylvie Régnier a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Parfait</h4> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Encore un de mes hôtels préférés dans le monde. Cinq étoiles sur tous les niveaux de service, la nourriture et le design. Un service chaleureux et amical est expérimenté dans tout l'hôtel et l'attention portée aux détails était incroyable. Le bar de l'hôtel est une expérience à ne pas manquer. Si vous avez besoin d'être à Paris, pour les affaires ou le plaisir, c'est l'endroit où séjournerC'est un endroit très agréable pour séjourner à Paris, c'est donc proche de la Tour Eiffel, en fait vous pouvez le voir en dehors de votre chambre. Ils ont des plats yaamy greeeeeat,et cocktails au bar. Beeds sont vraiment confortables et les chambres sont très propres. Je peux vous dire que pour moi c'est un service très important quand je voyage donc mes félicitations pour le personnel. Je recommanderai hautement. parce que j'ai tout simplement adoré.</p>
+                        <p><small>le 12/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/spanish-lady.jpg" alt="homme français" title="homme français">
+                            <h6>Mariana Andrea Machado Delgado a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>¿Cómo describir el paraíso?</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Desde el momento de la reserva hasta el último adiós, fue un constante maravillarnos por todos los detalles, cortesía y atención sin igual de este lugar. Especial agradecimiento a Patrice, cuya calidez humana nos hizo sentir en casa y con amigos desde el primer instante. Nos han regalado un fantástico upgrade, champagne, chocolates, imprimieron nuestras fotos de sorpresa, nos hicieron un collage con ellas y nos regalaron un vino maravilloso. Simplemente no hay palabras. Citando al hotel... perfection just happens. Y tanto.</p>
+                        <p><small>le 12/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/cn-girl.jpg" alt="femme allemande" title="femme allemande">
+                            <h6>Li Xintong a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Suite有着无敌的景观，服务也让人窝心满意</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <p>
+                            住在Suite两个晚上，阳台可以看到巴黎铁塔，整个房间的装饰与布置古典又新颖，房间光线充足，从柜台、门房、客房服务都让人感受到贴心与舒服，饭店位于蒙恬大道，地理位置很好治安也很佳，在预算许可的情形下，这家饭店会是我再度拜访的首选。早餐在一楼 三星餐厅用餐，餐点品质佳，用餐环境非常华美，值得期待。</p>
+                        <p><small>le 12/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/italian-guy.jpg" alt="femme française" title="femme française">
+                            <h6>Pierluigi Santini a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Tutto è perfetto</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <p>Un albergo di altissimo profilo dove tutto è un po’ di più di quello che ci si aspetta. Servizio impeccabile, camera spaziosa con un bagno esagerato, prima colazione ricca e non a buffet. Il personale si sforza sempre di venire in aiuto per ogni esigenza.
+                            Inutile dire che tutto si paga, ma non può essere altrimenti.</p>
+                        <p><small>le 10/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/swedish-man.jpg" alt="femme française" title="femme française">
+                            <h6>Magnus Eriksson a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>En vecka i en kokong</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>En mycket härlig vistelse på den fantastiska HôtelCop i Paris. Inget kan jämföras med stolthet och charmiga värd av dess personal och en känsla av att man är hemma. Fantastisk service och ursnygga nya rum i den nyförvärvade delen av byggnaden. </p>
+                        <p><small>le 10/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/portuguese-lady.jpg" alt="femme russe" title="femme russe">
+                            <h6>Rosa Ribeiro Vargas a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Perfeito !!</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>
+                            Foi minha primeira visita a Paris e o hotel me proporcionou uma experiência maravilhosa!!... A localização é ótima, num bairro super charmoso, perto de vários pontos turísticos. A decoração por dentro é maravilhosa e o atendimento dos funcionários é impecável!! Quartos amplos e confortáveis, se tiver vista pra torre então, incrível!!... Café da manhã delicioso! Pretendo voltar e com certeza me hospedarei lá novamente. Depois que vc conhece, difícil escolher outro lugar</p>
+                        <p><small>le 10/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/russian-guy.jpg" alt="homme français" title="homme français">
+                            <h6>Andreï Ivanovich a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Место, в которое хочется возвращаться снова и снова....</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Невероятный, сказочный отель с удивительной атмосферой, в которую ты окунаешься с головой. Внимательный персонал, профессионализм обслуживающего персонала на 5+. Уютные и красивые номера. Живописный уличный дворик с галереей картин. Стоит ли посетить это место? - однозначно Да !</p>
+                        <p><small>le 08/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/us-guy2.jpg" alt="homme russe" title="homme russe">
+                            <h6>Neil Chambers a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Exceptional</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <p>From the moment of arrival - front desk is amazing! Nicole was kind, caring and went out of their way to get us a room early after long journey. The food is exceptional and service by all of the staff is above and beyond. It is by far the nicest hotel we have ever stayed at in any country. Paris is magical - but this hotel is a dream. We can't say enough about the comfort of room, we don't want to leave.</p>
+                        <p><small>le 08/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/spanish-lady2.jpg" alt="femme états-unis" title="femme états-unis">
+                            <h6>Ana Lucía Uribe Caicedo a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>De lo mejor</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>El Panorama del Sena y el de la Torre Eiffel surgen al acercase a los balcones de las habitaciones después la sofisticación de los desayunos al aire libre en el patio interno
+                            todo es elegancia de los mejores del Mundo</p>
+                        <p><small>le 08/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/russian-lady.jpg" alt="homme français" title="homme français">
+                            <h6>Lana Mikhailova a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Шикарный отель с видом</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Шикарный отель с не менее шикарным видом из окна и балкона. Безумно красивые интерьеры, роскошь и французский шарм. Наверное один из самых идеальных отелей в Париже для проведения выходных в двоем. Романтичность зашкаливает, но так и должно быть в Париже.</p>
+                        <p><small>le 07/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/korean-man.jpg" alt="homme coréen" title="homme coréen">
+                            <h6>Kim Chan-Kyong a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>지금 까지 경험해본 호텔중 최고라고 말할수 있어요！</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>
+                            일단 호텔이 너무 이뻐서 방문해보고 싶었던 호텔중 하나 였고 파리의 3번째 호텔이 였다
+        
+                            여러가지 섬세한게 우리를 챙겨주고 있다는 느낌이들어 너무 행복했다
+                            만약 내 친구가 파리에 간다면 꼭 이 호텔에서 지내라고 하고 싶다
+                            내년 휴가때 또 지내고 싶은호텔이다
+        
+                            유럽 여행중 호텔의 불친절함으로 인해 여행기분을 여러번 망쳤던 나의경험으로서 여기는 최고의 호텔이다</p>
+                        <p><small>le 07/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/greek-lady.jpg" alt="femme japonaise" title="femme japonaise">
+                            <h6>Melania Pannayotis a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>Μοναδικό</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <p>
+                            Υπέροχος και πολυτελής χώρος.
+                            Άψογη εξηπηρετηση.
+                            Η εσωτερικη αυλή μοναδική... λειτουργεί και ως εκθεσιακός χώρος.
+                            Απόλαυση η σάλα για τον καφέ με την μουσική της άρπας να σε χαλαρώνει!
+                            Η δε τοποθεσία πολύ βολική διότι είναι κοντά στα ηλισια πεδία απο τη μια. και από τον Πύργο του Άιφελ από την άλλη...την παράσταση κλέβει το αναριχωμενο φυτό εσωτερικα στην αυλή με τις υπέροχες ολανθιστες ζαρντινιερες σε όλα τα μπαλκόνια.</p>
+                        <p><small>le 07/07/2020</small></p>
+                        <div class="separator my-5"></div>
+                        <div class="row">
+                            <img src="img/avis/german-lady.jpg" alt="femme allemande" title="femme allemande">
+                            <h6>Karla Siegbert a écrit un avis (juillet 2020)</h6>
+                        </div>
+                        <h4>5 Sterne sind zuwenig....</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>
+                            Für diesen Luxustempel! Summa cum laude! Mehr und oder besser geht nicht! Mit diesem Aufenthalt haben wir uns DEN Hoteltraum in Paris erfüllt, genauso unvergesslich und atemberaubend, wie vor Jahren im Burj Al Arab in Dubai! Träumen, mitten in der Stadt der Liebe, auf Wolke 7! Unbeschreiblich, muss man selbst erlebt und verinnerlicht haben! Wer es sich leisten kann oder will, das Must HAVE Hotel in Paris.</p>
+                        <p><small>le 07/07/2020</small></p>
+                    </div>
+                    <div class="separator my-5"></div>
+                </div>
+
+                <div class="tab-pane fade show reviews" id="avis-rooms" role="tabpanel" aria-labelledby="rooms-tab">
                     <div class="firstSeparator"></div>
                     <div class="subReviews">
                         <div class="row">

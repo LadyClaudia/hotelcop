@@ -24,55 +24,19 @@
     padding: 20px;
 }
 
-#indexCategory {
-    width: 80%;
-    margin: auto;
-}
 
-#indexCategory img {
+
+.indexCategory img {
     width: 100%;
     height: auto;
 }
 
-#indexCategory {
+.indexCategory {
     border: 1px solid var(--lightgold);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-#indexCategory .options {
-    border: none;
-    height: 50px;
-    color: var(--lightgold);
-    text-align: center;
-    box-shadow: none;
-}
-
-#indexCategory .textIndex .options img{
-    color: var(--lightgold) !important;
-}
-
-#indexCategory .textIndex {
-    padding: 0 50px;
-    align-self: center;
-    justify-content: center;
-} 
-
-#indexCategory .textIndex p {
-    text-align: justify;
-    color: var(--anthracite);
-}
-
-#indexCategory .textIndex img{
-    width: 26px;
-}
-
-#indexCategory .options p {
-    text-align: center !important;
-    color: var(--gold);
-
-}
-
-#indexCategory i {
+.indexCategory i {
     color: var(--lightgold);
     font-size: 1.7em;
 }
@@ -281,13 +245,15 @@
     display: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991.98px) {
     .room {
         background-position: center;
+        height: 140vh;
     }
     .room_details {
         top: 0;
         left: 0;
+        
     }
 
     .plate {

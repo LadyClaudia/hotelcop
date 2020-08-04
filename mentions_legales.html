@@ -12,7 +12,8 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/mentions_legales.css">
+    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="shortcut icon" href="img/logo2.png">
     <title>HôtelCop 5* | Mentions légales</title>
 </head>
@@ -24,7 +25,7 @@
 
     <!-- NAVBAR -->
     <div id="navbars" class="sticky">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow stroke">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow stroke">
             <a class="navbar-brand mr-5" href="#"><img id="logo" src="img/logo2.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
                 aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mr-md-5">
+                    <li class="nav-item mr-md-5 active">
                         <a class="nav-link" href="index.html">Accueil </a>
                     </li>
                     <li class="nav-item mr-md-5">
@@ -49,26 +50,28 @@
                         <a class="nav-link" href="hotelcop.html" data-toggle="collapse" data-target="#hotel">L'Hôtel</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav flex-row justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html" data-toggle="collapse" data-target="#reservation"><i class="far fa-calendar-alt"></i></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="img/uk.png" alt="english version"> </a>
+                        <a class="nav-link" href="#"><img src="img/flag_fr.png" alt=""></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="img/france.png" alt="version française"> </a>
+                        <a class="nav-link" href="#"><img src="img/flag_uk.png" alt=""></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i
-                                class="fas fa-search"></i></a>
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i class="fas fa-search"></i></a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!-- Second Nav -->
-        <div class="collapse stroke" id="rooms" data-parent="#navbars">
-            <div class="navbar navbar-expand-lg bg-transparent p-3">
+        <div class="collapse stroke shadow" id="rooms" data-parent="#navbars">
+            <div class="navbar navbar-expand-lg text-center bg-light p-3">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mr-md-5">
                         <a class="nav-link" href="rooms.html">Les Chambres </a>
@@ -88,42 +91,61 @@
                 </ul>
             </div>
         </div>
-        <div class="collapse stroke" id="hotel" data-parent="#navbars">
-            <div class="navbar navbar-expand-lg bg-transparent p-3">
+        <div class="collapse stroke shadow" id="hotel" data-parent="#navbars">
+            <div class="navbar navbar-expand-lg text-center bg-light p-3">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mr-md-5">
-                        <a class="nav-link" href="hotelcop.html">Qui sommes-nous ?</a>
+                        <a class="nav-link" href="qui_sommes_nous.html">Qui sommes-nous ?</a>
                     </li>
                     <li class="nav-item mr-md-5">
-                        <a class="nav-link" href="hotelcop.html">Accès - Contact</a>
+                        <a class="nav-link" href="#">Accès - Contact</a>
                     </li>
                     <li class="nav-item mr-md-5">
-                        <a class="nav-link" href="hotelcop.html">Recrutement</a>
+                        <a class="nav-link" href="#">Recrutement</a>
                     </li>
                     <li class="nav-item mr-md-5">
-                        <a class="nav-link" href="hotelcop.html">Evènements</a>
+                        <a class="nav-link" href="evenements.html">Evènements</a>
                     </li>
                     <li class="nav-item mr-md-5">
-                        <a class="nav-link" href="hotelcop.html">Presse</a>
+                        <a class="nav-link" href="presse.html">Presse</a>
+                    </li>
+                    <li class="nav-item mr-md-5">
+                        <a class="nav-link" href="avis.html">Avis</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="collapse" id="searchBar" data-parent="#navbars">
-            <div class="bg-transparent p-3">
+            <div class="bg-light p-3">
                 <form class="form-inline my-2 my-lg-0 justify-content-end">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </div>
+        <div class="collapse stroke shadow" id="reservation" data-parent="#navbars">
+            <div class="navbar navbar-expand-lg bg-light p-3 justify-content-center justify-content-md-end">
+                <button onclick="window.location ='reservation.html';" type="button" class="btn btn-outline-secondary">Réservation</button>
+            </div>
+        </div>
     </div>
-    <div class="legal">
-        <section class="legal_title">
-            <h2>Mentions légales</h2>
+
+    
+
+
+
+
+
+
+
+
+    
+        <section class="container legal_title">
+            <h2 class="text-center my-5">Mentions légales</h2>
+            <div class="separator"></div>
         </section>
-        <section>
-            <h2>Éditeur</h2>
+        <section class="container my-5">
+            <h4>Éditeur</h4>
             <p>Le site internet accessible, notamment, à l’adresse http://www.hotelcop.fr (ci-après : le « Site ») est édité par la société THE HÔTELCOP, LIMITED, société de droit irlandais au capital social de 2.000.000 Euros, immatriculée au Registre du Commerce et des Sociétés de Paris sous le numéro 528 520 420 44201 et dont le siège social est sis Third floor, 20 Mary's Abbey, Dublin
             (Irlande) et le principal établissement au 1 Avenue Montaigne – Paris (75008) ; numéro de téléphone +33 (0)1 48 25 30 00 (ci-après dénommée « HÔTELCOP »).</p>
             <p>Le Directeur de la publication du Site est : Kenneth O'Connor</p>
@@ -131,31 +153,27 @@
             <p>L’accès au Site ainsi que l’utilisation de son contenu s’effectuent dans le cadre des mentions
             d’utilisation décrites ci-après. Le fait d’accéder et de naviguer sur le Site constitue de la part de
             l’internaute une acceptation sans réserve des précisions suivantes :</p>
-        </section>
-        <section>
-            <h2>Propriété intellectuelle</h2>
+        
+            <h4>Propriété intellectuelle</h4>
             <p>Le Site dans son ensemble, ainsi que chacun des éléments qui le composent (notamment, textes, schémas, arborescences, logiciels, animations, images, photographies, illustrations, vidéos, représentations graphiques ou éditoriales, logos, etc.) constituent des œuvres de l’esprit protégés par le Code de la propriété intellectuelle ainsi que par toute autre législation internationale applicable. HÔTELCOP est seule habilitée (directement ou par l’effet de licences ou autorisations) à utiliser les éléments composant le Site, les noms de domaine, les marques, modèles, etc. ainsi que les images et contenus éditoriaux qui y sont reproduits.</p>
             <p>L’usage de tout ou partie du Site, notamment par téléchargement, reproduction, transmission,
             représentation ou diffusion à d’autres fins que la consultation et l’utilisation du Site à titre
             personnel et privé par l’internaute dans un but non commercial est strictement interdit. La violation de ces dispositions expose son auteur aux sanctions prévues tant par le Code de la propriété intellectuelle au titre notamment de la contrefaçon de droits d’auteur, de droit de marques que par le Code civil en matière de responsabilité civile. La création de tout lien hypertexte renvoyant à l’une quelconque des pages web ou éléments composant le Site est interdite sauf autorisation écrite et préalable de HÔTELCOP, laquelle autorisation pouvant être révoquée à tout moment. Tout contenu, site internet ou autre ayant un lien hypertexte dirigeant vers le Site ou vers l’un quelconque des éléments qui le composent ne sont pas sous le contrôle de HÔTELCOP et celle-ci décline par conséquent toute responsabilité (notamment, éditoriale) concernant l’accès à ces
             sites et leur contenu.</p>
-        </section>
-        <section>
-            <h2>Disponibilité du site</h2>
+        
+            <h4>Disponibilité du site</h4>
             <p>HÔTELCOP s’efforce, dans la mesure du possible, de maintenir accessibles de manière permanente le Site, mais n’est tenue à aucune obligation d’y parvenir. HÔTELCOP peut donc interrompre l’accès au Site, notamment pour des raisons de maintenance ou de mise à jour, ou pour toutes autres raisons, notamment techniques ou éditoriales et ce, sans préavis ni information préalable des internautes, sans que HÔTELCOP ne puisse être tenue pour responsable des conséquences de ces interruptions aussi bien à l’égard des internautes que de tout tiers.</p>
             <p>Par ailleurs, HÔTELCOP ne saurait être tenue pour responsable si des internautes ne parvenaient pas à accéder à tout ou partie du Site du fait de tout défaut technique ou de tout problème notamment et non limitativement lié à : une défaillance et/ou un encombrement du réseau Internet, une défaillance des fournisseurs d’accès Internet, une erreur humaine ou d’origine électrique, toute intervention malveillante, tous dysfonctionnements de logiciel ou de matériel,
             un cas de force majeure.</p>
-        </section>
-        <section>
-            <h2>Responsabilité</h2>
+        
+            <h4>Responsabilité</h4>
             <p>HÔTELCOP s’efforce d’assurer au mieux de ses possibilités l’exactitude et la mise à jour des informations diffusées sur le Site, dont elle se réserve le droit de modifier, à tout moment et sans préavis, le contenu. Toutefois, HÔTELCOP ne peut garantir l’exactitude, la précision et l’exhaustivité des informations mises à disposition sur le Site, lesquelles informations ne constituent ni une garantie ni un engagement de la part de HÔTELCOP à l’égard de l’internaute.</p>
             <p>En particulier, cette dernière ne saurait être tenue pour responsable : de toute imprécision, inexactitude ou omission desdites informations ; de tout dommage éventuel résultant d’une intrusion informatique d’un tiers ayant entraîné une
             modification desdites informations ; et, plus généralement, de tous dommages, directs ou indirects, qu’elles qu’en soient les causes,
             origines, natures et conséquences, liées à l’accès (ou à l’impossibilité d’accéder au Site), au contenu, à l’utilisation du Site et/ou au crédit accordé à une quelconque information provenant de ce dernier.
             </p>
-        </section>
-        <section>
-            <h2>Carte cadeau</h2>
+        
+            <h4>Carte cadeau</h4>
             <p>La carte cadeau achetée sur la e-boutique vous sera envoyée par courrier indépendamment de toute autre commande d’article HÔTELCOP. Validité
             La carte cadeau est valable pour payer tout ou partie des dépenses dans l’ensemble des points de vente du HÔTELCOP 1 Avenue Montaigne : hôtel, restaurants, bars, HÔTELCOP Club Paris.
             La carte cadeau HÔTELCOP est active dès sa date d’achat. La durée de validité de la carte cadeau est de deux ans à partir de sa date d’achat. Valeur
@@ -170,94 +188,7 @@
             Le solde de votre carte cadeau est disponible en vous connectant sur notre site hotelcopboutique.com / Carte cadeau / Consultez votre solde.</p>
         </section>
     </div>
-    <section class="container-fluid basDePage mb-5">
-        <div class="row justify-content-between">
-            <div class="col">
-                <h4>HOTEL</h4>
-                <ul>
-                    <li>Accueil</li>
-                    <li>Qui sommes-nous?</li>
-                    <li>Accès - Contact</li>
-                    <li>Recrutement</li>
-                    <li>Evènements</li>
-                    <li>Presse</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h4>CHAMBRES</h4>
-                <ul>
-                    <li>Les Chambres</li>
-                    <li>Classique</li>
-                    <li>Confort</li>
-                    <li>Deluxe</li>
-                    <li>Les Suites</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h4>RESTAURANT</h4>
-                <ul>
-                    <li>Le Restaurant</li>
-                    <li>Carte Brasserie</li>
-                    <li>Carte Dégustation</li>
-                    <li>Carte Restaurant</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h4>SPA</h4>
-                <ul>
-                    <li>Le Spa est nos soins</li>
-                    <li>Soin Détente</li>
-                    <li>Soin Découverte</li>
-                    <li>Soin Relaxant</li>
-                    <li>Soin Plaisir</li>
-                    <li>Soin Evasion</li>
-                </ul>
-            </div>
-            <div class="col">
-                <div>
-                    <h4>PARTAGEZ</h4>
-                    <div class="iconesFooter">
-                        <i class="fab fa-facebook-square mr-3"></i>
-                        <i class="fab fa-instagram mr-3"></i>
-                        <i class="fab fa-twitter-square mr-3"></i>
-                    </div>
-
-                </div>
-                <div class="py-3">
-                    <label>Inscrivez-vous à notre newletter</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                    </div>
-                </div>
-                <div class="iconesFooter">
-                    <img src="img/petfriendly.png" alt="pet friendly" class="mr-3">
-                    <img src="img/freewifi.png" alt="free wifi" class="mr-3">
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="row justify-content-center py-3">
-            <div class="col col-md-2">
-                <h3>HôtelCop<span class="stars">&starf;&starf;&starf;&starf;&starf;</span></h3>
-                <p>1 avenue Montaigne</p>
-                <p>75008 Paris</p>
-                <p>01.02.03.04.05</p>
-                <p>contact@hotelcop.fr</p>
-            </div>
-            <div class="col col-md-2">
-                <ul>
-                    <li>Mentions Légales</li>
-                    <li>CGV</li>
-                    <li>Plan du site</li>
-                    <li>Imprimer la page</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    
 
 
     <!-- FontAwesome -->

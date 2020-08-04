@@ -109,6 +109,11 @@ h4 {
     padding-right: unset;
 }
 
+.container {
+    padding-left: unset;
+    padding-right: unset;
+}
+
 .text {
     padding: 0 50px;
     align-self: center;
@@ -358,13 +363,29 @@ footer .fa-heart {
     overflow: hidden;
 }
 
+/* ANCRES */
+div#recrutement:target,
+div#access:target,
+div#brasserie:target,
+div#degustation:target,
+div#menuSoir:target,
+div#detente:target,
+div#decouverte:target,
+div#relaxant:target,
+div#plaisir:target,
+div#evasion:target {
+    padding-top: 4em; 
+    margin-top: -7em; 
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 991.98px) {
     h1 {
         font-size: 5em;
     }
 }
 
-
+/* PRINT PAGE */
 @media print {
     @page {margin: 1cm;}
     .banner {display: none;}

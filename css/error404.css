@@ -1,5 +1,8 @@
-.smoke {
+.container-fluid {
     height: 100vh;
+}
+
+.smoke {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +19,7 @@
 .smoke ul li {
     list-style: none;
     color: white;
-    font-size: 100px;
+    font-size: 10em;
     font-weight: bold;
     letter-spacing: 10px;
     transition: 2s;
@@ -74,9 +77,52 @@
 
 .teapot {
     text-align: center;
-    max-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .teapot img {
-    height: 95%;
+    width: 100%;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .smoke ul li {
+        font-size: 2em;
+    }
+    .teapot img {
+        width: 60%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .smoke ul li {
+        font-size: 4em;
+    }
+    .teapot img {
+        width: 60%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .smoke ul li {
+        font-size: 6em;
+    }
+    .teapot img {
+        width: 70%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .smoke ul li {
+        font-size: 8em;
+    }
+    .teapot img {
+        width: 80%;
+    }
 }

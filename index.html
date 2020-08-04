@@ -64,7 +64,7 @@
         <!-- NAVBAR -->
         <div id="navbars" class="sticky">
             <nav class="navbar navbar-expand-lg navbar-light bg-light shadow stroke">
-                <a class="navbar-brand mr-5" href="#"><img id="logo" src="img/logo2.png" alt=""></a>
+                <a class="navbar-brand mr-5" href="index.html"><img id="logo" src="img/logo2.png" alt="logo hotelcop"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
                     aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -88,9 +88,9 @@
                             <a class="nav-link" href="hotelcop.html" data-toggle="collapse" data-target="#hotel">L'Hôtel</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav flex-row justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link" href="reservation.html"><i class="far fa-calendar-alt"></i></a>
+                            <a class="nav-link" href="reservation.html" data-toggle="collapse" data-target="#reservation"><i class="far fa-calendar-alt"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -102,15 +102,14 @@
                             <a class="nav-link" href="#"><img src="img/flag_uk.png" alt=""></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i
-                                    class="fas fa-search"></i></a>
+                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i class="fas fa-search"></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
             <!-- Second Nav -->
             <div class="collapse stroke shadow" id="rooms" data-parent="#navbars">
-                <div class="navbar navbar-expand-lg bg-light p-3">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="rooms.html">Les Chambres </a>
@@ -131,22 +130,25 @@
                 </div>
             </div>
             <div class="collapse stroke shadow" id="hotel" data-parent="#navbars">
-                <div class="navbar navbar-expand-lg bg-light p-3">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="qui_sommes_nous.html">Qui sommes-nous ?</a>
                         </li>
                         <li class="nav-item mr-md-5">
-                            <a class="nav-link" href="#">Accès - Contact</a>
+                            <a class="nav-link" href="qui_sommes_nous.html#access">Accès - Contact</a>
                         </li>
                         <li class="nav-item mr-md-5">
-                            <a class="nav-link" href="#">Recrutement</a>
+                            <a class="nav-link" href="recrutement.html">Recrutement</a>
                         </li>
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="evenements.html">Evènements</a>
                         </li>
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="presse.html">Presse</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="avis.html">Avis</a>
                         </li>
                     </ul>
                 </div>
@@ -159,7 +161,17 @@
                     </form>
                 </div>
             </div>
+            <div class="collapse stroke shadow" id="reservation" data-parent="#navbars">
+                <div class="navbar navbar-expand-lg bg-light p-3 justify-content-center justify-content-md-end">
+                    <button onclick="window.location ='reservation.html';" type="button" class="btn btn-outline-secondary">Réservation</button>
+                </div>
+            </div>
         </div>
+
+
+
+
+
 
 
         <section class="container-fluid mb-5">
@@ -176,27 +188,19 @@
             </div>
         </section>
 
-        <section id="indexCategory">
-            <div class="row align-items-center flex-md-row flex-column my-5">
-                <div class="col order-1 order-md-0" id="aPropos">
-                    <h3 class="text-center">À propos de l'hôtel</h3>
-                    <div class="px-5">
-                        <p>Situé en face du Musée du Louvre et surplombant le jardin des Tuileries, HôtelCop est à
-                            proximité des principaux monuments parisiens : la Tour Eiffel, le Palais Garnier, le
-                            Grand Palais, le Trocadéro, les Invalides, le Musée d’Orsay…</p>
-
-                        <p>Il se trouve en plein cœur de Paris, dans le quartier de la mode, du shopping et des
-                            musées. Les magasins de luxe de la rue St Honoré témoignent de l’esprit de créativité
-                            qui souffle tous les jours sur ce quartier de la capitale française. Chaque chambre a
-                            été soigneusement rénovée et aménagée pour retrouver la splendeur du 19e siècle, alliant
-                            l'élégance traditionnelle et le confort moderne avec subtilité.</p>
-
-                        <p>Une partie des chambres donne sur une cour fleurie très calme ; l’autre donne sur le
-                            jardin des Tuileries. Peu d’hôtels parisiens offrent une vue aussi spectaculaire sur le
-                            musée d’Orsay, le dôme des Invalides, la Tour Eiffel ou la verrière du Grand Palais.</p>
+        <section class="container indexCategory">
+            <div class="row align-items-center flex-md-row flex-column">
+                <div class="col order-1 order-md-0">
+                    <h4 class="text-center pt-5 pt-md-0">À propos de l'hôtel</h4>
+                    <div class="px-2 px-md-5 text-justify">
+                        <p>Situé en face du Musée du Louvre et surplombant le jardin des Tuileries, HôtelCop est à proximité des principaux monuments parisiens : la Tour Eiffel, le Palais Garnier, le Grand Palais, le Trocadéro, les Invalides, le Musée d’Orsay…
+                            <br>
+                        Il se trouve en plein cœur de Paris, dans le quartier de la mode, du shopping et des musées. Les magasins de luxe de la rue St Honoré témoignent de l’esprit de créativité qui souffle tous les jours sur ce quartier de la capitale française. Chaque chambre a été soigneusement rénovée et aménagée pour retrouver la splendeur du 19e siècle, alliant l'élégance traditionnelle et le confort moderne avec subtilité.
+                            <br>
+                        Une partie des chambres donne sur une cour fleurie très calme ; l’autre donne sur le jardin des Tuileries. Peu d’hôtels parisiens offrent une vue aussi spectaculaire sur le musée d’Orsay, le dôme des Invalides, la Tour Eiffel ou la verrière du Grand Palais.</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col text-right">
                     <img src="img/hotel/hotel_reception.jpg" alt="réception HôtelCop">
                 </div>
             </div>
@@ -291,11 +295,8 @@
         <section class="container-fluid chef my-5">
             <div class="plate">
                 <div class="eat p-2 p-md-5">
-                    <h3>La gastronomie ou <br>l'art d'un Chef</h3>
-                    <p>Notre chef est animé par la passion de la cuisine et un goût immodéré du beau et du bon. Sa cuisine est une cuisine d'auteur, complexe sans être compliquée, brillante sans être démonstrative.
-                    Ses compositions très graphiques et modernes déclinent le même produit de plusieurs manières.
-                    Chaque plat est d’abord un émerveillement des yeux et une ivresse de parfums avant l’explosion des saveurs, une rencontre, un dialogue, une aventure, un imaginaire, une cuisine forte comme les évidences.
-                    Le chef propose une cuisine à la fois subtile et généreuse et révèle le meilleur des ingrédients, exaltant arômes et saveurs...</p>
+                    <h3>L'art d'un Chef</h3>
+                    <p>Notre chef est animé par la passion de la cuisine et un goût immodéré du beau et du bon. Ses compositions très graphiques et modernes déclinent le même produit de plusieurs manières. Chaque plat est d’abord un émerveillement des yeux et une ivresse de parfums avant l’explosion des saveurs, une rencontre, un dialogue, une aventure, un imaginaire, une cuisine forte comme les évidences.</p>
                     <div class="text-center">
                         <button onclick="window.location ='restaurant.html';" type="button" class="btn btn-outline-secondary text-center my-3">En savoir plus</button>
                     </div>
@@ -334,6 +335,19 @@
             </div>
         </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="separator-end"></div>
 
         <section class="container-fluid basDePage my-5">
@@ -343,8 +357,8 @@
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="qui_sommes_nous.html">Qui sommes-nous?</a></li>
-                        <li><a href="#">Accès - Contact</a></li>
-                        <li><a href="#">Recrutement</a></li>
+                        <li><a href="qui_sommes_nous.html#access">Accès - Contact</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
                         <li><a href="evenements.html">Evènements</a></li>
                         <li><a href="presse.html">Presse</a></li>
                         <li><a href="avis.html">Avis</a></li>
@@ -364,20 +378,20 @@
                     <h4>RESTAURANT</h4>
                     <ul>
                         <li><a href="restaurant.html">Le Restaurant</a></li>
-                        <li><a href="#">Carte Brasserie</a></li>
-                        <li><a href="#">Carte Dégustation</a></li>
-                        <li><a href="#">Carte Restaurant</a></li>
+                        <li><a href="restaurant.html#brasserie">Carte Brasserie</a></li>
+                        <li><a href="restaurant.html#degustation">Carte Dégustation</a></li>
+                        <li><a href="restaurant.html#menuSoir">Carte Restaurant</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4>SPA</h4>
                     <ul>
                         <li><a href="spa.html">Le Spa et nos soins</a></li>
-                        <li><a href="#">Soin Détente</a></li>
-                        <li><a href="#">Soin Découverte</a></li>
-                        <li><a href="#">Soin Relaxant</a></li>
-                        <li><a href="#">Soin Plaisir</a></li>
-                        <li><a href="#">Soin Evasion</a></li>
+                        <li><a href="spa.html#decouverte">Soin Découverte</a></li>
+                        <li><a href="spa.html#detente">Soin Détente</a></li>
+                        <li><a href="spa.html#relaxant">Soin Relaxant</a></li>
+                        <li><a href="spa.html#plaisir">Soin Plaisir</a></li>
+                        <li><a href="spa.html#evasion">Soin Evasion</a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -438,8 +452,7 @@
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <!-- Bootstrap JS-jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

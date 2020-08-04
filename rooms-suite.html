@@ -54,9 +54,9 @@
                             <a class="nav-link" href="hotelcop.html" data-toggle="collapse" data-target="#hotel">L'Hôtel</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav flex-row justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link" href="reservation.html"><i class="far fa-calendar-alt"></i></a>
+                            <a class="nav-link" href="reservation.html" data-toggle="collapse" data-target="#reservation"><i class="far fa-calendar-alt"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -68,15 +68,14 @@
                             <a class="nav-link" href="#"><img src="img/flag_uk.png" alt=""></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i
-                                    class="fas fa-search"></i></a>
+                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#searchBar"><i class="fas fa-search"></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
             <!-- Second Nav -->
             <div class="collapse stroke shadow" id="rooms" data-parent="#navbars">
-                <div class="navbar navbar-expand-lg bg-light p-3">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="rooms.html">Les Chambres </a>
@@ -97,7 +96,7 @@
                 </div>
             </div>
             <div class="collapse stroke shadow" id="hotel" data-parent="#navbars">
-                <div class="navbar navbar-expand-lg bg-light p-3">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="qui_sommes_nous.html">Qui sommes-nous ?</a>
@@ -114,6 +113,9 @@
                         <li class="nav-item mr-md-5">
                             <a class="nav-link" href="presse.html">Presse</a>
                         </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="avis.html">Avis</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -123,6 +125,11 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
+                </div>
+            </div>
+            <div class="collapse stroke shadow" id="reservation" data-parent="#navbars">
+                <div class="navbar navbar-expand-lg bg-light p-3 justify-content-center justify-content-md-end">
+                    <button onclick="window.location ='reservation.html';" type="button" class="btn btn-outline-secondary">Réservation</button>
                 </div>
             </div>
         </div>

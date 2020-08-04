@@ -44,3 +44,8 @@
 }
 
 
+@media (max-width: 575.98px) {
+    .opinion .nav-link {
+        padding: .5rem .8rem;
+    }
+}
