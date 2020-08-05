@@ -24,6 +24,8 @@
 .titleBannerMini {
     margin: 0 auto;
     text-align: center;
+    left: calc(50% - 293px);
+    top: calc(50% - 140px);
 }
 
 .container{
